@@ -1,0 +1,211 @@
+escape_char /
+comment_char %
+% Locale for internationalized C locale in UTF-8
+% Contributed by W. Mark Kubacki <wmark@hurrikane.de>, 2014
+
+LC_IDENTIFICATION
+title      "internationalized C locale in UTF-8"
+source     "Blitznote e.K."
+address    ""
+contact    "W. Mark Kubacki"
+email      "wmark@hurrikane.de"
+tel        ""
+fax        "+49-5131-50597-01"
+language   "C"
+territory  ""
+revision   "1.1"
+date       "2016-01-24"
+%
+category  "C@ISO:2014";LC_IDENTIFICATION
+category  "C@ISO:2014";LC_CTYPE
+category  "C@ISO:2014";LC_COLLATE
+category  "C@ISO:2014";LC_TIME
+category  "C@ISO:2014";LC_NUMERIC
+category  "C@ISO:2014";LC_PAPER
+category  "C@ISO:2014";LC_MEASUREMENT
+category  "C@ISO:2014";LC_MONETARY
+category  "C@ISO:2014";LC_MESSAGES
+category  "C@ISO:2014";LC_NAME
+category  "C@ISO:2014";LC_ADDRESS
+category  "C@ISO:2014";LC_TELEPHONE
+END LC_IDENTIFICATION
+
+LC_CTYPE
+% The following is a copy of i18n with the following change:
+% - The "blank", "cntrl", "space" classes are defined as specified by POSIX
+copy "i18n"
+
+space /
+% ISO/IEC 6429/
+   <U0009>..<U000D>;/
+% BASIC LATIN/
+   <U0020>;/
+
+cntrl /
+   <U0000>..<U001F>;<U007F>;/
+
+blank /
+   <U0009>;<U0020>
+
+translit_start
+include "translit_combining";""
+
+% German umlauts.
+% LATIN CAPITAL LETTER A WITH DIAERESIS.
+<U00C4> "<U0041><U0308>";"<U0041><U0045>"
+% LATIN CAPITAL LETTER O WITH DIAERESIS.
+<U00D6> "<U004F><U0308>";"<U004F><U0045>"
+% LATIN CAPITAL LETTER U WITH DIAERESIS.
+<U00DC> "<U0055><U0308>";"<U0055><U0045>"
+% LATIN SMALL LETTER A WITH DIAERESIS.
+<U00E4> "<U0061><U0308>";"<U0061><U0065>"
+% LATIN SMALL LETTER O WITH DIAERESIS.
+<U00F6> "<U006F><U0308>";"<U006F><U0065>"
+% LATIN SMALL LETTER U WITH DIAERESIS.
+<U00FC> "<U0075><U0308>";"<U0075><U0065>"
+
+% Danish.
+% LATIN CAPITAL LETTER A WITH RING ABOVE.
+<U00C5> "<U0041><U030A>";"<U0041><U0041>"
+% LATIN SMALL LETTER A WITH RING ABOVE.
+<U00E5> "<U0061><U030A>";"<U0061><U0061>"
+
+% The following strange first-level transliteration derive from the use
+% U201E and U201C as "correct" quoting characters.  These two characters
+% do not really belong together.  The result is that somebody who uses
+% U201C and U201D will get the incorrect U00AB / U00BB sequences.
+% LEFT DOUBLE QUOTATION MARK
+<U201C> <U00AB>;<U0022>
+% RIGHT DOUBLE QUOTATION MARK
+<U201D> <U00BB>;<U0022>
+% DOUBLE LOW-9 QUOTATION MARK
+<U201E> <U00BB>;"<U002C><U002C>"
+% DOUBLE HIGH-REVERSED-9 QUOTATION MARK
+<U201F> <U00AB>;<U0022>
+
+translit_end
+
+END LC_CTYPE
+
+LC_COLLATE
+
+define DIACRIT_FORWARD
+
+% Copy the template from ISO/IEC 14651
+copy "iso14651_t1"
+
+END LC_COLLATE
+
+LC_TIME
+% Abbreviated weekday names (%a)
+abday       "<U0053><U0075><U006E>";"<U004D><U006F><U006E>";/
+            "<U0054><U0075><U0065>";"<U0057><U0065><U0064>";/
+            "<U0054><U0068><U0075>";"<U0046><U0072><U0069>";/
+            "<U0053><U0061><U0074>"
+
+% Full weekday names (%A)
+day         "<U0053><U0075><U006E><U0064><U0061><U0079>";/
+            "<U004D><U006F><U006E><U0064><U0061><U0079>";/
+            "<U0054><U0075><U0065><U0073><U0064><U0061><U0079>";/
+            "<U0057><U0065><U0064><U006E><U0065><U0073><U0064><U0061><U0079>";/
+            "<U0054><U0068><U0075><U0072><U0073><U0064><U0061><U0079>";/
+            "<U0046><U0072><U0069><U0064><U0061><U0079>";/
+            "<U0053><U0061><U0074><U0075><U0072><U0064><U0061><U0079>"
+
+% Abbreviated month names (%b)
+abmon       "<U004A><U0061><U006E>";"<U0046><U0065><U0062>";/
+            "<U004D><U0061><U0072>";"<U0041><U0070><U0072>";/
+            "<U004D><U0061><U0079>";"<U004A><U0075><U006E>";/
+            "<U004A><U0075><U006C>";"<U0041><U0075><U0067>";/
+            "<U0053><U0065><U0070>";"<U004F><U0063><U0074>";/
+            "<U004E><U006F><U0076>";"<U0044><U0065><U0063>"
+
+% Full month names (%B)
+mon         "<U004A><U0061><U006E><U0075><U0061><U0072><U0079>";/
+            "<U0046><U0065><U0062><U0072><U0075><U0061><U0072><U0079>";/
+            "<U004D><U0061><U0072><U0063><U0068>";/
+            "<U0041><U0070><U0072><U0069><U006C>";/
+            "<U004D><U0061><U0079>";/
+            "<U004A><U0075><U006E><U0065>";/
+            "<U004A><U0075><U006C><U0079>";/
+            "<U0041><U0075><U0067><U0075><U0073><U0074>";/
+            "<U0053><U0065><U0070><U0074><U0065><U006D><U0062><U0065><U0072>";/
+            "<U004F><U0063><U0074><U006F><U0062><U0065><U0072>";/
+            "<U004E><U006F><U0076><U0065><U006D><U0062><U0065><U0072>";/
+            "<U0044><U0065><U0063><U0065><U006D><U0062><U0065><U0072>"
+
+% ISO 8601
+week    7;19971201;4
+first_weekday	1 % Monday
+first_workday	1
+
+% Appropriate date and time representation (%c)
+d_t_fmt "<U0025><U0059><U002D><U0025><U006D><U002D><U0025><U0064><U0020><U0025><U0054><U0020><U0025><U007A>"
+
+% Appropriate date representation (%x)
+d_fmt   "<U0025><U0059><U002D><U0025><U006D><U002D><U0025><U0064>"
+
+% Appropriate time representation (%X)
+%	"%T"
+t_fmt   "<U0025><U0054>"
+
+% Appropriate AM/PM time representation (%r)
+%	empty = not supported
+t_fmt_ampm ""
+
+% Strings for AM/PM
+%       empty = forced 24h time format
+am_pm	"";""
+
+% Appropriate date representation (date(1))
+% %a %Y-%m-%dT%H:%M:%S%z     results in: Tue 2014-09-30T18:32:16+0200
+% %a %Y-%m-%d %H:%M:%S %z    results in: Tue 2014-09-30 18:32:16 +0200
+% The latter is easier to read and process (for example, by $(cut -d ' ' -f 2))
+%     hence used here. Remember, 'T' as delimiter is just a recommendation.
+date_fmt	"<U0025><U0061>/
+<U0020><U0025><U0059><U002D><U0025><U006D><U002D><U0025><U0064>/
+<U0020><U0025><U0048><U003A><U0025><U004D><U003A><U0025><U0053>/
+<U0020><U0025><U007A>"
+
+END LC_TIME
+
+LC_NUMERIC
+% This is the POSIX Locale definition for
+% the LC_NUMERIC category.
+%
+decimal_point   "<U002E>"
+thousands_sep   ""
+grouping        -1
+%
+END LC_NUMERIC
+
+LC_PAPER
+% ISO 216
+height   297
+width    210
+END LC_PAPER
+
+LC_MEASUREMENT
+% metric
+measurement 1
+END LC_MEASUREMENT
+
+LC_MONETARY
+copy "i18n"
+END LC_MONETARY
+
+LC_MESSAGES
+copy "POSIX"
+END LC_MESSAGES
+
+LC_NAME
+copy "i18n"
+END LC_NAME
+
+LC_ADDRESS
+copy "i18n"
+END LC_ADDRESS
+
+LC_TELEPHONE
+copy "i18n"
+END LC_TELEPHONE
