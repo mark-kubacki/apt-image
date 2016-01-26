@@ -17,6 +17,7 @@ Features
 * and latest *cURL*
 * a bootstrap *[ca-certificates.crt](https://github.com/wmark/docker-curl/blob/master/ca-certificates.crt)*
 * latest *signify* for Linux from [Blitznote/signify](https://github.com/Blitznote/signify)
+* bzip2, jq, plzip, runit (for its *chpst*), unzip
 * an UTF-8 locale as default
 
 Usage
