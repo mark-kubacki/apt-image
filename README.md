@@ -8,17 +8,19 @@ These scripts create images without that fuzz.
 * blitznote/debootstrap-amd64:16.04 [![](https://badge.imagelayers.io/blitznote/debootstrap-amd64:16.04.svg)](https://imagelayers.io/?images=blitznote/debootstrap-amd64:16.04 'Get your own badge on imagelayers.io')
 * blitznote/debootstrap-amd64:15.10 [![](https://badge.imagelayers.io/blitznote/debootstrap-amd64:15.10.svg)](https://imagelayers.io/?images=blitznote/debootstrap-amd64:15.10 'Get your own badge on imagelayers.io')
 
+![size comparison Ubuntu for Docker 135MB, ubuntu-debootstrap 111MB, blitznote/debootstrap-amd64 70MB](ubuntu-for-Docker-sizes.png)
+
 Features
 --------
 
 * no *init* systems and tools for filesystem management to save space and bandwidth
-* **small**: *15.10@ae4ae7d45e72* is 68% the size of *ubuntu-debootstrap:15.10@56590e6e34d5* and **57% the size of ubuntu:15.10**@2804d41e7f10
-* yet it comes with *apt-transport-https*
+* **small**: 68% the size of *ubuntu-debootstrap:15.10@56590e6e34d5* and **57% the size of ubuntu:15.10**@2804d41e7f10
+* comes with *apt-transport-https*
 * and latest *cURL*
 * a bootstrap *[ca-certificates.crt](https://github.com/wmark/docker-curl/blob/master/ca-certificates.crt)*
 * latest *signify* for Linux from [Blitznote/signify](https://github.com/Blitznote/signify)
 * bzip2, jq, plzip, runit (for its *chpst*), unzip
-* an UTF-8 locale as default
+* with locale ISO.UTF-8 as default
 
 Usage
 -----
@@ -48,4 +50,4 @@ Caveats
 -------
 
 The images for architecture *amd64*/x86_64 require instruction set **SSE 4**, which had been introduced in 2007.
-Not having a reasonably recent CPU will trigger a ```illegal instruction``` error.
+Not having a reasonably recent CPU will trigger the ```illegal instruction``` error.

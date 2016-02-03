@@ -1,5 +1,7 @@
 * text eol=lf
 
+*.manifest text=auto
 *.md text=auto
+*.png binary
 *.tar.xz binary
 README text=auto
