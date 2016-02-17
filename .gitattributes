@@ -3,5 +3,6 @@
 *.manifest text=auto
 *.md text=auto
 *.png binary
+*.tar.lz binary
 *.tar.xz binary
 README text=auto
