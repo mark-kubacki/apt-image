@@ -8,12 +8,14 @@ These scripts create images for Docker without that fuzz.
 * blitznote/debootstrap-amd64:16.04 [![](https://badge.imagelayers.io/blitznote/debootstrap-amd64:16.04.svg)](https://imagelayers.io/?images=blitznote/debootstrap-amd64:16.04 'Get your own badge on imagelayers.io')
 * blitznote/debootstrap-amd64:15.10 [![](https://badge.imagelayers.io/blitznote/debootstrap-amd64:15.10.svg)](https://imagelayers.io/?images=blitznote/debootstrap-amd64:15.10 'Get your own badge on imagelayers.io')
 
-![size comparison Ubuntu for Docker 135MB, ubuntu-debootstrap 111MB, blitznote/debootstrap-amd64 70MB](https://raw.githubusercontent.com/Blitznote/docker-ubuntu-debootstrap/master/ubuntu-for-Docker-sizes.png)
+![size comparison: Ubuntu for Docker 120MB, ubuntu-debootstrap 87MB, blitznote/debootstrap-amd64 55MB](https://rawgit.com/Blitznote/docker-ubuntu-debootstrap/master/ubuntu-for-Docker-sizes.svg)
 
 Features
 --------
 
-* **small**: 68% the size of *ubuntu-debootstrap:15.10@56590e6e34d5* and **57% the size of ubuntu:15.10**@2804d41e7f10
+* **small**:
+  * 63% the size of ubuntu-debootstrap (:16.04@898cb62b7368)
+  * 45% the size of ubuntu (:16.04@44776f55294a)
 * comes with *apt-transport-https*
 * and latest *curl*
 * a bootstrap *[ca-certificates.crt](https://github.com/wmark/docker-curl/blob/master/ca-certificates.crt)*
@@ -26,27 +28,8 @@ Usage
 
 This is meant as drop-in replacement for ```FROM ubuntu``` and ```FROM ubuntu-debootstrap```.
 
-You can use *curl* right away or start with the ```apt-get -q update``` dance as usual.
-HTTPS support is already included, therefore this will work:
-
-```Docker
-FROM blitznote/debootstrap-amd64:16.04
-
-# Just a personal preference. Contains optimized OpenSSL for SSE4:
-RUN printf "deb [arch=$(dpkg --print-architecture) trusted=yes] https://s.blitznote.com/debs/ubuntu/$(dpkg --print-architecture)/ all/" \
-    > /etc/apt/sources.list.d/blitznote.list \
- && printf 'Package: *\nPin: origin "s.blitznote.com"\nPin-Priority: 510\n' \
-    > /etc/apt/preferences.d/prefer-blitznote
-
-# As this image already comes with curl and jq, you could get the latest
-#   release of 'something' from Github like this:
-#   (The inner curl|jq gets the download location for the outer curl..|tar.)
-RUN curl --silent --show-error --fail --location --header "Accept: application/tar+gzip, application/x-gzip, application/octet-stream" -o - \
-    $(curl --silent --show-error --fail --location --header "Accept: application/json" \
-        https://api.github.com/repos/syncthing/syncthing/releases/latest \
-      | jq -r '.assets[] | select(.name | contains("linux")) | select(.name | contains("amd64")) | select(.browser_download_url | contains(".tar")) | .browser_download_url') \
-    | tar -xz --no-same-owner --strip-components=1 --wildcards -C ...
-```
+You can use *curl* right away or start with ```apt-get -q update``` as usual.
+HTTPS support is already included in *apt*!
 
 Use lightweight *chpst* (31 kB) instead of *gosu* (2635 kB):
 
@@ -55,11 +38,6 @@ Use lightweight *chpst* (31 kB) instead of *gosu* (2635 kB):
 + chpst -u myuser -- syncthing "$@"
 - gosu nobody:root bash -c 'whoami && id'
 + chpst -u nobody:root -- bash -c 'whoami && id'
-```
-
-```bash
-# from gosu to chpst:
-sed -e 's:gosu \([^ ]*\) :chpst -u \1 -- :g'
 ```
 
 Regenerate the Images
@@ -76,5 +54,5 @@ DOCKER_PREFIX=blitznote/ \
 Caveats
 -------
 
-The images for architecture *amd64*/x86_64 require instruction set **SSE 4**, which had been introduced in 2007.
+Images for architecture *amd64*/x86_64 require instruction set **SSE 4**, which had been introduced in 2007.
 Not having a reasonably recent CPU will trigger the ```illegal instruction``` error.
