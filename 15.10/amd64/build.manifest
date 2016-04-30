@@ -4,7 +4,7 @@ apt-transport-https 	 1.2.11-2bndyn
 base-files 	 7.2ubuntu11
 bash 	 4.3-14ubuntu1
 bzip2 	 1.0.6-8
-ca-certificates 	 20160427
+ca-certificates 	 20160430
 coreutils 	 8.23-4ubuntu2
 curl 	 7.48.0-239dyn
 dash 	 0.5.7-4ubuntu2
@@ -69,6 +69,7 @@ multiarch-support 	 2.21-0ubuntu4.1
 passwd 	 1:4.1.5.1-1.1ubuntu7
 perl-base 	 5.20.2-6ubuntu0.2
 plzip 	 1.4-1
+psmisc 	 22.21-2build1
 readline-common 	 6.3-8ubuntu1
 runit 	 2.1.2-3ubuntu1
 sed 	 4.2.2-6.1
