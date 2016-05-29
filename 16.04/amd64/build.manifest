@@ -4,7 +4,7 @@ apt-transport-https 	 1.2.12-2bndyn
 base-files 	 9.4ubuntu4
 bash 	 4.3-14ubuntu1
 bzip2 	 1.0.6-8
-ca-certificates 	 20160517
+ca-certificates 	 20160529
 coreutils 	 8.25-2ubuntu2
 curl 	 7.48.0-300dyn
 dash 	 0.5.8-2.1ubuntu2
@@ -61,7 +61,7 @@ libsmartcols1 	 2.27.1-6ubuntu3
 libsqlite3-0 	 3.11.0-1ubuntu1
 libstdc++6 	 5.3.1-14ubuntu2
 libtinfo5 	 6.0+20160213-1ubuntu1
-libudev1 	 229-4ubuntu5
+libudev1 	 229-4ubuntu6
 libustr-1.0-1 	 1.0.4-5
 libuuid1 	 2.27.1-6ubuntu3
 locales 	 2.23-0ubuntu3

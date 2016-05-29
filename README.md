@@ -40,6 +40,14 @@ Use lightweight *chpst* (31 kB) instead of *gosu* (2635 kB):
 + chpst -u nobody:root -- bash -c 'whoami && id'
 ```
 
+To account for differences between *gpg v1* and *gpg v2*
+I've created a script for fetching keys from keyservers:
+
+```bash
+/usr/bin/get-gpg-key 0xcbcb082a1bb943db 0xa6a19b38d3d831ef \
+| apt-key add
+```
+
 Regenerate the Images
 ---------------------
 

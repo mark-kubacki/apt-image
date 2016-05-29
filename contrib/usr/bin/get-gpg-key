@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# author:   W. Mark Kubacki <wmark@hurrikane.de>
+# revision: 2016-05-29 #1
+
+set -euo pipefail
+
+params=()
+for KEYID; do
+  if (( ${#params[@]} > 0 )); then
+    params+=("--next")
+  fi
+  params+=("--header" "Accept: text/plain")
+  params+=("-L" "https://keyserver.ubuntu.com/pks/lookup?op=get&exact=on&fingerprint=on&search=${KEYID}")
+done
+
+if (( ${#params[@]} > 0 )); then
+  curl -fsS "${params[@]}" | \
+  sed -n '/^-----BEGIN/,/^-----END/p'
+fi
