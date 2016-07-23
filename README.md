@@ -31,6 +31,12 @@ This is meant as drop-in replacement for ```FROM ubuntu``` and ```FROM ubuntu-de
 You can use *curl* right away or start with ```apt-get -q update``` as usual.
 HTTPS support is already included in *apt*!
 
+Find examples here:
+
+* [Mark's Docker images](https://hub.docker.com/u/wmark/) – [Github](https://hub.docker.com/u/wmark/)
+
+### Recommendations
+
 Use lightweight *chpst* (31 kB) instead of *gosu* (2635 kB):
 
 ```diff
