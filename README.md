@@ -33,7 +33,7 @@ HTTPS support is already included in *apt*!
 
 Find examples here:
 
-* [Mark's Docker images](https://hub.docker.com/u/wmark/) – [Github](https://hub.docker.com/u/wmark/)
+* [Mark's Docker images](https://hub.docker.com/u/wmark/) – [Github](https://github.com/search?q=user%3Awmark+docker-)
 
 ### Recommendations
 
