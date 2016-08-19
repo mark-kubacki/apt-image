@@ -2,13 +2,15 @@ Minimal Ubuntu images for Docker
 ================================
 
 Ever wondered why Ubuntu for Docker comes with *systemd* and tools for filesystem management?
-Yeah, me too.
+Yeah, [me](https://twitter.com/murmosh) too.
 These scripts create images for Docker without that fuzz.
 
-* blitznote/debootstrap-amd64:16.04 [![](https://badge.imagelayers.io/blitznote/debootstrap-amd64:16.04.svg)](https://imagelayers.io/?images=blitznote/debootstrap-amd64:16.04 'Get your own badge on imagelayers.io')
-* blitznote/debootstrap-amd64:15.10 [![](https://badge.imagelayers.io/blitznote/debootstrap-amd64:15.10.svg)](https://imagelayers.io/?images=blitznote/debootstrap-amd64:15.10 'Get your own badge on imagelayers.io')
+* blitznote/debootstrap-amd64:16.04 [![](https://images.microbadger.com/badges/version/blitznote/debootstrap-amd64.svg?tag=16.04)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Get your own image badge on microbadger.com")
+* blitznote/debootstrap-amd64:15.10 [![](https://images.microbadger.com/badges/version/blitznote/debootstrap-amd64.svg?tag=15.10)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Get your own image badge on microbadger.com")
 
 ![size comparison: Ubuntu for Docker 120MB, ubuntu-debootstrap 87MB, blitznote/debootstrap-amd64 55MB](https://rawgit.com/Blitznote/docker-ubuntu-debootstrap/master/ubuntu-for-Docker-sizes.svg)
+
+[![Docker image](https://img.shields.io/badge/Docker-blitznote%2Fdebootstrap-blue.svg)](https://hub.docker.com/r/blitznote/debootstrap-amd64/) ← https://github.com/Blitznote/docker-ubuntu-debootstrap
 
 Features
 --------
