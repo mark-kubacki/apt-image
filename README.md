@@ -5,8 +5,8 @@ Ever wondered why Ubuntu for Docker comes with *systemd* and tools for filesyste
 Yeah, [me](https://twitter.com/murmosh) too.
 These scripts create images for Docker without that fuzz.
 
-* blitznote/debootstrap-amd64:16.04 [![](https://images.microbadger.com/badges/version/blitznote/debootstrap-amd64.svg?tag=16.04)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Get your own image badge on microbadger.com")
-* blitznote/debootstrap-amd64:15.10 [![](https://images.microbadger.com/badges/version/blitznote/debootstrap-amd64.svg?tag=15.10)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Get your own image badge on microbadger.com")
+* blitznote/debootstrap-amd64:16.04 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64.svg?tag=16.04)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Get your own image badge on microbadger.com")
+* blitznote/debootstrap-amd64:15.10 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64.svg?tag=15.10)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Get your own image badge on microbadger.com")
 
 ![size comparison: Ubuntu for Docker 120MB, ubuntu-debootstrap 87MB, blitznote/debootstrap-amd64 55MB](https://rawgit.com/Blitznote/docker-ubuntu-debootstrap/master/ubuntu-for-Docker-sizes.svg)
 
