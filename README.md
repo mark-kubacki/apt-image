@@ -72,6 +72,6 @@ Caveats
 
 * Images for architecture *amd64*/x86_64 require instruction set **SSE 4**, which had been introduced in 2007.
   If you don't have a reasonably recent CPU you will eventually run into the `illegal instruction` error.
-* You need Linux 3.13.0 or later. Version 3.18.0 or later is strongly recommended.
+* You need Linux 3.10.0 or later. Version 3.18.0 or later is strongly recommended.
 * Kernel support for **Seccomp** is strongly recommended.
   `zgrep SECCOMP /proc/config.gz`
