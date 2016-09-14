@@ -1,6 +1,6 @@
 FROM scratch
 LABEL org.label-schema.vendor="Blitznote" \
-      org.label-schema.build-date="2016-09-07T20:38:58+00:00" \
+      org.label-schema.build-date="2016-09-14T18:40:39+00:00" \
       org.label-schema.name="minimal base images with Ubuntu" \
       org.label-schema.vcs-type="git" \
       org.label-schema.vcs-url="https://github.com/Blitznote/docker-ubuntu-debootstrap"
