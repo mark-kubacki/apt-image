@@ -3,7 +3,7 @@ Minimal Ubuntu images for Docker
 
 Ever wondered why Ubuntu for Docker comes with *systemd* and tools for filesystem management?
 Yeah, [me](https://twitter.com/murmosh) too.
-These scripts create images for Docker without that fuzz.
+These are container images without that fuzz.
 
 * blitznote/debootstrap-amd64:16.04 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:16.04.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Get your own image badge on microbadger.com")
 * blitznote/debootstrap-amd64:15.10 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:15.10.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Get your own image badge on microbadger.com")
@@ -59,13 +59,9 @@ I've created a script for fetching keys from keyservers:
 Regenerate the Images
 ---------------------
 
-```bash
-apt-get -y install multistrap docker-engine curl
-
-ARCH=amd64 \
-DOCKER_PREFIX=blitznote/ \
-./build.sh 15.10 16.04
-```
+1. Use the packages sources from `/etc/apt/sources.list`.
+2. Install the packages listed in `build.manifest` using **apt**.
+3. Remove any excess that cannot be used from within an container.
 
 Caveats
 -------
