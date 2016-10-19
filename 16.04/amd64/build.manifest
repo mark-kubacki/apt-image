@@ -1,12 +1,12 @@
 adduser 	 3.113+nmu3ubuntu4
-apt 	 1.2.14-2bn
-apt-transport-https 	 1.2.14-2bndyn
+apt 	 1.3.1-2bn
+apt-transport-https 	 1.3.1-2bn
 base-files 	 9.4ubuntu4.2
 bash 	 4.3-14ubuntu1.1
 bzip2 	 1.0.6-8
-ca-certificates 	 20160929
+ca-certificates 	 20161019
 coreutils 	 8.25-2ubuntu2
-curl 	 7.50.3-2dyn
+curl 	 7.50.3-84dyn
 dash 	 0.5.8-2.1ubuntu2
 debconf 	 1.5.58ubuntu1
 debianutils 	 4.7
@@ -19,10 +19,10 @@ gpgv2 	 2.1.14-9bn
 grep 	 2.25-1~16.04.1
 gzip 	 1.6-4ubuntu1
 hostname 	 3.16ubuntu2
-init-system-helpers 	 1.29ubuntu2
+init-system-helpers 	 1.29ubuntu3
 jq 	 1.5+dfsg-17bn
 libacl1 	 2.2.52-3
-libapt-pkg5.0 	 1.2.14-2bn
+libapt-pkg5.0 	 1.3.1-2bn
 libassuan0 	 2.4.3-1
 libattr1 	 1:2.4.47-2
 libaudit-common 	 1:2.4.5-1ubuntu2
@@ -33,7 +33,7 @@ libc6 	 2.24-1bn0
 libcap2 	 1:2.25-1
 libcap2-bin 	 1:2.25-1
 libcurl3 	 7.99.9-1alias
-libcurl3-boringssl 	 7.50.3-2
+libcurl3-boringssl 	 7.50.3-84
 libdb5.3 	 5.3.28-11
 libgcc1 	 1:6.2.0-4bn8
 libgcrypt20 	 1.7.3-4bn
@@ -41,6 +41,7 @@ libgpg-error0 	 1.24-1
 libksba8 	 1.3.4-4
 liblz4-1 	 0.0~r131-2ubuntu2
 liblzma5 	 5.1.1alpha+20120614-2ubuntu2
+libminizip1 	 1.1-8
 libncursesw5 	 6.0+20160213-1ubuntu1
 libnpth0 	 1.2-3
 libonig2 	 5.9.6-1
@@ -62,6 +63,7 @@ libustr-1.0-1 	 1.0.4-5
 locales 	 2.24-1bn0
 lsb-base 	 9.20160110ubuntu0.2
 mawk 	 1.3.3-17ubuntu2
+minizip 	 1.1-8
 multiarch-support 	 2.24-1bn0
 ncurses-base 	 6.0+20160213-1ubuntu1
 passwd 	 1:4.2-3.1ubuntu5
@@ -76,7 +78,6 @@ sensible-utils 	 0.0.9
 signify-linux 	 1.106
 sysvinit-utils 	 2.88dsf-59.3ubuntu2
 tar 	 1.29b-1bn0
-tzdata 	 2016f-0ubuntu0.16.04
+tzdata 	 2016g-0ubuntu0.16.04
 ubuntu-keyring 	 2012.05.19
-unzip 	 6.0-20ubuntu1
 zlib1g 	 1:1.2.8.sse4-2
