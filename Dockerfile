@@ -7,3 +7,4 @@ LABEL org.label-schema.vendor="Blitznote" \
 
 ADD rootfs.tar.xz /
 CMD ["/bin/bash"]
+SHELL ["/bin/bash", "-c"]
