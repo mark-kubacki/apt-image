@@ -529,7 +529,9 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/awk -> /etc/alternatives/awk
 -rwxr-sr-x 	 0/42 	 ./usr/bin/expiry   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/expr   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/factor   
+-rwxr-xr-x 	 0/0 	 ./usr/bin/fallocate   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/find   
+-rwxr-xr-x 	 0/0 	 ./usr/bin/flock   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/fmt   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/fold   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/get-gpg-key   
@@ -1842,15 +1844,15 @@ lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT-0 -> ../GMT
 lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT0 -> ../GMT 
 lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/Greenwich -> ../GMT 
 lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/UCT -> ../UCT 
-lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/UTC -> ../Zulu 
-lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/Universal -> ../Zulu 
-lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/Zulu -> ../Zulu 
+lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/UTC -> ../Universal 
+lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/Universal -> ../Universal 
+lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/Zulu -> ../Universal 
 -rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/Factory   
 -rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/GMT   
 -rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/UCT   
-lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/UTC -> Zulu 
-lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Universal -> Zulu 
--rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/Zulu   
+lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/UTC -> Universal 
+-rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/Universal   
+lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Zulu -> Universal 
 lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/localtime -> /etc/localtime 
 -rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/posixrules   
 drwxr-xr-x 	 0/0 	 ./usr/src/   

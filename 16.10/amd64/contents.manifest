@@ -528,7 +528,9 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/awk -> /etc/alternatives/awk
 -rwxr-sr-x 	 0/42 	 ./usr/bin/expiry   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/expr   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/factor   
+-rwxr-xr-x 	 0/0 	 ./usr/bin/fallocate   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/find   
+-rwxr-xr-x 	 0/0 	 ./usr/bin/flock   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/fmt   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/fold   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/get-gpg-key   

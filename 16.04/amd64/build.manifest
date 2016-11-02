@@ -1,12 +1,12 @@
 adduser 	 3.113+nmu3ubuntu4
 apt 	 1.3.1-2bn
 apt-transport-https 	 1.3.1-2bn
-base-files 	 9.4ubuntu4.2
+base-files 	 9.4ubuntu4.3
 bash 	 4.3-14ubuntu1.1
 bzip2 	 1.0.6-8
-ca-certificates 	 20161019
+ca-certificates 	 20161102
 coreutils 	 8.25-2ubuntu2
-curl 	 7.50.3-84dyn
+curl 	 7.51.0-2dyn
 dash 	 0.5.8-2.1ubuntu2
 debconf 	 1.5.58ubuntu1
 debianutils 	 4.7
@@ -33,7 +33,7 @@ libc6 	 2.24-1bn0
 libcap2 	 1:2.25-1
 libcap2-bin 	 1:2.25-1
 libcurl3 	 7.99.9-1alias
-libcurl3-boringssl 	 7.50.3-84
+libcurl3-boringssl 	 7.51.0-2
 libdb5.3 	 5.3.28-11
 libgcc1 	 1:6.2.0-4bn8
 libgcrypt20 	 1.7.3-4bn
@@ -78,6 +78,6 @@ sensible-utils 	 0.0.9
 signify-linux 	 1.106
 sysvinit-utils 	 2.88dsf-59.3ubuntu2
 tar 	 1.29b-1bn0
-tzdata 	 2016g-0ubuntu0.16.04
+tzdata 	 2016h-0ubuntu0.16.04
 ubuntu-keyring 	 2012.05.19
 zlib1g 	 1:1.2.8.sse4-2
