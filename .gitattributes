@@ -1,8 +1,14 @@
-* text eol=lf
+*.yml      text eol=lf core.whitespace whitespace=tab-in-indent,trailing-space,tabwidth=2
+.git*      text eol=auto core.whitespace whitespace=trailing-space
+
+*.bash     text eol=lf core.whitespace whitespace=tab-in-indent,trailing-space,tabwidth=2
+*.sh       text eol=lf core.whitespace whitespace=tab-in-indent,trailing-space,tabwidth=2
 
 *.manifest text=auto
-*.md text=auto
-*.png binary
-*.tar.lz binary
-*.tar.xz binary
-README text=auto
+*.md       text eol=auto core.whitespace whitespace=tab-in-indent,trailing-space,tabwidth=2
+
+*.ai       binary
+*.png      binary
+*.svg      text eol=lf core.whitespace whitespace=trailing-space
+*.tar.lz   binary
+*.tar.xz   binary
