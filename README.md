@@ -59,12 +59,41 @@ I've created a script for fetching keys from keyservers:
 | apt-key add
 ```
 
+### Troubleshooting
+
+These images come with latest versions of **libc** and **Perl**, no matter which
+Ubuntu version you have downloaded.
+Although this decision benefits security, you can run into packages which won't install due to dependencies.
+In almost all cases it's either related to *Perl* or broken in vanilla Ubuntu, too.
+
+To downgrade *Perl* to use packages from Ubuntu only:
+
+```bash
+. /etc/os-release
+
+# 16.04 - xenial
+# 16.10 - yakkety
+apt-get -t ${UBUNTU_CODENAME} --allow-downgrades -y install perl-base=5.22*
+```
+
+If you intend to use this Docker image for building packages, you will need to uncompress
+the shipped version files first:
+
+```bash
+find /var/lib/dpkg/info -type f -name '*.lz' \
+| xargs --max-args=1 --max-procs=$(nproc) --no-run-if-empty \
+  plzip --keep -d
+```
+
 Regenerate the Images
 ---------------------
 
 1. Use the packages sources from `/etc/apt/sources.list`.
 2. Install the packages listed in `build.manifest` using **apt**.
 3. Remove any excess that cannot be used from within an container.
+
+I have published a script which automates that.
+[You can find it on Github, as answer to question/issue 2](https://github.com/Blitznote/docker-ubuntu-debootstrap/issues/2#issuecomment-256456602).
 
 Caveats
 -------
