@@ -84,10 +84,20 @@ drwxr-xr-x 	 0/0 	 ./etc/X11/Xsession.d/
 drwxr-xr-x 	 0/0 	 ./etc/alternatives/   
 -rw-r--r-- 	 0/0 	 ./etc/alternatives/README   
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/awk -> /usr/bin/mawk 
+lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzcat -> /usr/bin/xzcat 
+lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzcmp -> /usr/bin/xzcmp 
+lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzdiff -> /usr/bin/xzdiff 
+lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzegrep -> /usr/bin/xzegrep 
+lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzfgrep -> /usr/bin/xzfgrep 
+lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzgrep -> /usr/bin/xzgrep 
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzip -> /usr/bin/lzip.plzip 
+lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzless -> /usr/bin/xzless 
+lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzma -> /usr/bin/xz 
+lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzmore -> /usr/bin/xzmore 
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/nawk -> /usr/bin/mawk 
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/pinentry -> /usr/bin/pinentry-curses 
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/rmt -> /usr/sbin/rmt-tar 
+lrwxrwxrwx 	 0/0 	 ./etc/alternatives/unlzma -> /usr/bin/unxz 
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/unzip -> /usr/bin/miniunzip 
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/zip -> /usr/bin/minizip 
 drwxr-xr-x 	 0/0 	 ./etc/apt/   
@@ -137,8 +147,6 @@ lrwxrwxrwx 	 0/0 	 ./etc/dpkg/origins/default -> ubuntu
 -rw-r--r-- 	 0/0 	 ./etc/host.conf   
 drwxr-xr-x 	 0/0 	 ./etc/init/   
 -rw-r--r-- 	 0/0 	 ./etc/init/passwd.conf   
-drwxr-xr-x 	 0/0 	 ./etc/init.d/   
--rwxr-xr-x 	 0/0 	 ./etc/init.d/hwclock.sh   
 -rw-r--r-- 	 0/0 	 ./etc/inputrc   
 -rw-r--r-- 	 0/0 	 ./etc/issue   
 -rw-r--r-- 	 0/0 	 ./etc/issue.net   
@@ -186,17 +194,6 @@ drwxr-xr-x 	 0/0 	 ./etc/pam.d/
 -rw------- 	 0/0 	 ./etc/passwd-   
 -rw-r--r-- 	 0/0 	 ./etc/profile   
 drwxr-xr-x 	 0/0 	 ./etc/profile.d/   
-drwxr-xr-x 	 0/0 	 ./etc/rc0.d/   
-lrwxrwxrwx 	 0/0 	 ./etc/rc0.d/K01hwclock.sh -> ../init.d/hwclock.sh 
-drwxr-xr-x 	 0/0 	 ./etc/rc1.d/   
-drwxr-xr-x 	 0/0 	 ./etc/rc2.d/   
-drwxr-xr-x 	 0/0 	 ./etc/rc3.d/   
-drwxr-xr-x 	 0/0 	 ./etc/rc4.d/   
-drwxr-xr-x 	 0/0 	 ./etc/rc5.d/   
-drwxr-xr-x 	 0/0 	 ./etc/rc6.d/   
-lrwxrwxrwx 	 0/0 	 ./etc/rc6.d/K01hwclock.sh -> ../init.d/hwclock.sh 
-drwxr-xr-x 	 0/0 	 ./etc/rcS.d/   
-lrwxrwxrwx 	 0/0 	 ./etc/rcS.d/S01hwclock.sh -> ../init.d/hwclock.sh 
 -rwxr-xr-x 	 0/0 	 ./etc/rmt   
 drwxr-xr-x 	 0/0 	 ./etc/runit/   
 -rwxr-xr-x 	 0/0 	 ./etc/runit/1   
@@ -232,10 +229,6 @@ drwxr-xr-x 	 0/0 	 ./etc/ssl/certs/
 -rw-r--r-- 	 0/0 	 ./etc/ssl/certs/ca-certificates.crt   
 -rw-r--r-- 	 0/0 	 ./etc/subgid   
 -rw-r--r-- 	 0/0 	 ./etc/subuid   
-drwxr-xr-x 	 0/0 	 ./etc/systemd/   
-drwxr-xr-x 	 0/0 	 ./etc/systemd/system/   
-drwxr-xr-x 	 0/0 	 ./etc/systemd/system/timers.target.wants/   
-lrwxrwxrwx 	 0/0 	 ./etc/systemd/system/timers.target.wants/apt-daily.timer -> /lib/systemd/system/apt-daily.timer 
 drwxr-xr-x 	 0/0 	 ./etc/terminfo/   
 -rw-r--r-- 	 0/0 	 ./etc/terminfo/README   
 -rw-r--r-- 	 0/0 	 ./etc/timezone   
@@ -342,8 +335,8 @@ lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0 -> libgpg-error.so.0
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0.19.1   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libhistory.so.7 -> libhistory.so.7.0 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libhistory.so.7.0   
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5 -> liblzma.so.5.0.0 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5.0.0   
+lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5 -> liblzma.so.5.2.2 
+-rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5.2.2   
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libm-2.24.so   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libm.so.6 -> libm-2.24.so 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libmemusage.so   
@@ -499,6 +492,7 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/awk -> /etc/alternatives/awk
 -rwsr-xr-x 	 0/0 	 ./usr/bin/chsh   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/cksum   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/clear_console   
+-rwxr-xr-x 	 0/0 	 ./usr/bin/cmp   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/comm   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/csplit   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/curl   
@@ -512,6 +506,8 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/awk -> /etc/alternatives/awk
 -rwxr-xr-x 	 0/0 	 ./usr/bin/debconf-escape   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/debconf-set-selections   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/debconf-show   
+-rwxr-xr-x 	 0/0 	 ./usr/bin/diff   
+-rwxr-xr-x 	 0/0 	 ./usr/bin/diff3   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/dircolors   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/dirname   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/dpkg   
@@ -565,8 +561,18 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/gpgv2 -> gpgv
 -rwxr-xr-x 	 0/0 	 ./usr/bin/localedef   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/logname   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/lspgpot   
+lrwxrwxrwx 	 0/0 	 ./usr/bin/lzcat -> /etc/alternatives/lzcat 
+lrwxrwxrwx 	 0/0 	 ./usr/bin/lzcmp -> /etc/alternatives/lzcmp 
+lrwxrwxrwx 	 0/0 	 ./usr/bin/lzdiff -> /etc/alternatives/lzdiff 
+lrwxrwxrwx 	 0/0 	 ./usr/bin/lzegrep -> /etc/alternatives/lzegrep 
+lrwxrwxrwx 	 0/0 	 ./usr/bin/lzfgrep -> /etc/alternatives/lzfgrep 
+lrwxrwxrwx 	 0/0 	 ./usr/bin/lzgrep -> /etc/alternatives/lzgrep 
 lrwxrwxrwx 	 0/0 	 ./usr/bin/lzip -> /etc/alternatives/lzip 
 -rwxr-xr-x 	 0/0 	 ./usr/bin/lzip.plzip   
+lrwxrwxrwx 	 0/0 	 ./usr/bin/lzless -> /etc/alternatives/lzless 
+lrwxrwxrwx 	 0/0 	 ./usr/bin/lzma -> /etc/alternatives/lzma 
+-rwxr-xr-x 	 0/0 	 ./usr/bin/lzmainfo   
+lrwxrwxrwx 	 0/0 	 ./usr/bin/lzmore -> /etc/alternatives/lzmore 
 -rwxr-xr-x 	 0/0 	 ./usr/bin/mawk   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/md5sum   
 lrwxrwxrwx 	 0/0 	 ./usr/bin/md5sum.textutils -> md5sum 
@@ -606,6 +612,7 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/pstree.x11 -> pstree
 -rwxr-xr-x 	 0/0 	 ./usr/bin/runsvdir   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/savelog   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/script   
+-rwxr-xr-x 	 0/0 	 ./usr/bin/sdiff   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/select-editor   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/sensible-browser   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/sensible-editor   
@@ -642,6 +649,8 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/touch -> /bin/touch
 -rwxr-xr-x 	 0/0 	 ./usr/bin/unexpand   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/uniq   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/unlink   
+lrwxrwxrwx 	 0/0 	 ./usr/bin/unlzma -> /etc/alternatives/unlzma 
+lrwxrwxrwx 	 0/0 	 ./usr/bin/unxz -> xz 
 lrwxrwxrwx 	 0/0 	 ./usr/bin/unzip -> /etc/alternatives/unzip 
 -rwxr-xr-x 	 0/0 	 ./usr/bin/update-alternatives   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/users   
@@ -651,6 +660,15 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/which -> /bin/which
 -rwxr-xr-x 	 0/0 	 ./usr/bin/who   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/whoami   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/xargs   
+-rwxr-xr-x 	 0/0 	 ./usr/bin/xz   
+lrwxrwxrwx 	 0/0 	 ./usr/bin/xzcat -> xz 
+lrwxrwxrwx 	 0/0 	 ./usr/bin/xzcmp -> xzdiff 
+-rwxr-xr-x 	 0/0 	 ./usr/bin/xzdiff   
+lrwxrwxrwx 	 0/0 	 ./usr/bin/xzegrep -> xzgrep 
+lrwxrwxrwx 	 0/0 	 ./usr/bin/xzfgrep -> xzgrep 
+-rwxr-xr-x 	 0/0 	 ./usr/bin/xzgrep   
+-rwxr-xr-x 	 0/0 	 ./usr/bin/xzless   
+-rwxr-xr-x 	 0/0 	 ./usr/bin/xzmore   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/yes   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/zdump   
 lrwxrwxrwx 	 0/0 	 ./usr/bin/zip -> /etc/alternatives/zip 
@@ -1857,6 +1875,7 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/alternatives/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/awk   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/builtins.7.gz   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/lzip   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/lzma   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/pinentry   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/rmt   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/unzip   
@@ -1925,6 +1944,8 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/debianutils.md5sums   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/debianutils.postinst   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/debianutils.postrm   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/diffutils.list   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/diffutils.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/dpkg.conffiles   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/dpkg.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/dpkg.md5sums   
@@ -2229,6 +2250,10 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/ubuntu-keyring.postinst   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/util-linux.list   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/util-linux.postrm   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/xz-utils.list   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/xz-utils.md5sums   
+-rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/xz-utils.postinst   
+-rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/xz-utils.prerm   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/zlib1g:amd64.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/zlib1g:amd64.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/zlib1g:amd64.shlibs   
