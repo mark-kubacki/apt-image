@@ -154,6 +154,8 @@ drwxr-xr-x 	 0/0 	 ./etc/init/
 -rw-r--r-- 	 0/0 	 ./etc/init/hwclock.sh.conf   
 -rw-r--r-- 	 0/0 	 ./etc/init/passwd.conf   
 -rw-r--r-- 	 0/0 	 ./etc/init/runsvdir.conf   
+drwxr-xr-x 	 0/0 	 ./etc/init.d/   
+-rwxr-xr-x 	 0/0 	 ./etc/init.d/hwclock.sh   
 -rw-r--r-- 	 0/0 	 ./etc/inittab   
 -rw-r--r-- 	 0/0 	 ./etc/inputrc   
 -rw-r--r-- 	 0/0 	 ./etc/issue   

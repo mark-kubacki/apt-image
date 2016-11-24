@@ -147,6 +147,8 @@ lrwxrwxrwx 	 0/0 	 ./etc/dpkg/origins/default -> ubuntu
 -rw-r--r-- 	 0/0 	 ./etc/host.conf   
 drwxr-xr-x 	 0/0 	 ./etc/init/   
 -rw-r--r-- 	 0/0 	 ./etc/init/passwd.conf   
+drwxr-xr-x 	 0/0 	 ./etc/init.d/   
+-rwxr-xr-x 	 0/0 	 ./etc/init.d/hwclock.sh   
 -rw-r--r-- 	 0/0 	 ./etc/inputrc   
 -rw-r--r-- 	 0/0 	 ./etc/issue   
 -rw-r--r-- 	 0/0 	 ./etc/issue.net   

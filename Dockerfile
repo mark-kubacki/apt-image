@@ -5,6 +5,6 @@ LABEL org.label-schema.vendor="Blitznote" \
       org.label-schema.vcs-type="git" \
       org.label-schema.vcs-url="https://github.com/Blitznote/docker-ubuntu-debootstrap"
 
-ADD rootfs.tar.xz /
+ADD rootfs.tar /
 CMD ["/bin/bash"]
 SHELL ["/bin/bash", "-c"]

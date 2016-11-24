@@ -1,3 +1,4 @@
+*.asc
 *.manifest
-extra.tar.*
-rootfs_contents.sig
+*.sig
+extra.tar*
