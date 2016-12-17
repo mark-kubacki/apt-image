@@ -10,5 +10,6 @@
 *.ai       binary
 *.png      binary
 *.svg      text eol=lf core.whitespace whitespace=trailing-space
-*.tar.lz   binary
-*.tar.xz   binary
+rootfs.tar binary diff=debian-tarball
+*.tar.lz   binary diff=tar
+*.tar.xz   binary diff=tar

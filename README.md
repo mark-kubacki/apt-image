@@ -95,6 +95,20 @@ Regenerate the Images
 I have published a script which automates that.
 [You can find it on Github, as answer to question/issue 2](https://github.com/Blitznote/docker-ubuntu-debootstrap/issues/2#issuecomment-256456602).
 
+### Hints
+
+Leveraging git's "textconv" you can track changes to the archive files. Run:
+
+```bash
+git config --global diff.tar.textconv "tar -tavf"
+git config --global diff.tar.cachetextconv true
+
+git config --global diff.debian-tarball.textconv "tar --to-stdout -x ./var/lib/dpkg/available -f"
+git config --global diff.debian-tarball.cachetextconv true
+```
+
+This merely changes how diffs are displayed.
+
 Caveats
 -------
 
