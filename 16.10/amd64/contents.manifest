@@ -77,9 +77,6 @@ drwxr-xr-x 	 0/0 	 ./dev/
 -rw-r--r-- 	 0/0 	 ./dev/null   
 drwxr-xr-x 	 0/0 	 ./etc/   
 -rw------- 	 0/0 	 ./etc/.pwd.lock   
-drwxr-xr-x 	 0/0 	 ./etc/X11/   
-drwxr-xr-x 	 0/0 	 ./etc/X11/Xsession.d/   
--rw-r--r-- 	 0/0 	 ./etc/X11/Xsession.d/90gpg-agent   
 -rw-r--r-- 	 0/0 	 ./etc/adduser.conf   
 drwxr-xr-x 	 0/0 	 ./etc/alternatives/   
 -rw-r--r-- 	 0/0 	 ./etc/alternatives/README   
@@ -123,7 +120,6 @@ drwxr-xr-x 	 0/0 	 ./etc/cron.daily/
 -rwxr-xr-x 	 0/0 	 ./etc/cron.daily/dpkg   
 -rwxr-xr-x 	 0/0 	 ./etc/cron.daily/passwd   
 drwxr-xr-x 	 0/0 	 ./etc/cron.weekly/   
--rwxr-xr-x 	 0/0 	 ./etc/cron.weekly/fstrim   
 -rw-r--r-- 	 0/0 	 ./etc/debconf.conf   
 -rw-r--r-- 	 0/0 	 ./etc/debian_version   
 drwxr-xr-x 	 0/0 	 ./etc/default/   
@@ -235,8 +231,6 @@ drwxr-xr-x 	 0/0 	 ./etc/terminfo/
 -rw-r--r-- 	 0/0 	 ./etc/terminfo/README   
 -rw-r--r-- 	 0/0 	 ./etc/timezone   
 drwxr-xr-x 	 0/0 	 ./etc/update-motd.d/   
--rwxr-xr-x 	 0/0 	 ./etc/update-motd.d/00-header   
--rwxr-xr-x 	 0/0 	 ./etc/update-motd.d/10-help-text   
 drwxr-xr-x 	 0/0 	 ./home/   
 drwxr-xr-x 	 0/0 	 ./lib/   
 drwxr-xr-x 	 0/0 	 ./lib/systemd/   
@@ -381,8 +375,6 @@ lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libseccomp.so.2 -> libseccomp.so.2.3.1
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libseccomp.so.2.3.1   
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libselinux.so.1   
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libsepol.so.1   
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libsmartcols.so.1 -> libsmartcols.so.1.1.0 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libsmartcols.so.1.1.0   
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libthread_db-1.0.so   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libthread_db.so.1 -> libthread_db-1.0.so 
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libtinfo.so.5 -> libtinfo.so.5.9 
@@ -555,7 +547,6 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/gpgv2 -> gpgv
 -rwxr-xr-x 	 0/0 	 ./usr/bin/ischroot   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/join   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/jq   
--rwxr-xr-x 	 0/0 	 ./usr/bin/kbxutil   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/killall   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/ldd   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/link   
@@ -621,9 +612,7 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/pstree.x11 -> pstree
 -rwxr-xr-x 	 0/0 	 ./usr/bin/sensible-pager   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/seq   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/sha1sum   
--rwxr-xr-x 	 0/0 	 ./usr/bin/sha224sum   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/sha256sum   
--rwxr-xr-x 	 0/0 	 ./usr/bin/sha384sum   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/sha512sum   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/shred   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/shuf   
@@ -799,11 +788,8 @@ lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl-boringssl.so.4.4.0 -> ../x
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl.so.3 -> libcurl-boringssl.so.3 
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl.so.4 -> libcurl-boringssl.so.4 
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl.so.4.4.0 -> libcurl-boringssl.so.4.4.0 
--rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libdb-5.3.so   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libformw.so.5 -> libformw.so.5.9 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libformw.so.5.9   
-lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libksba.so.8 -> libksba.so.8.11.5 
--rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libksba.so.8.11.5   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/liblz4.so.1 -> liblz4.so.1.7.1 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/liblz4.so.1.7.1   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libmenuw.so.5 -> libmenuw.so.5.9 
@@ -1471,10 +1457,8 @@ lrwxrwxrwx 	 0/0 	 ./usr/sbin/cpgr -> cppw
 -rwxr-xr-x 	 0/0 	 ./usr/sbin/cppw   
 lrwxrwxrwx 	 0/0 	 ./usr/sbin/delgroup -> deluser 
 -rwxr-xr-x 	 0/0 	 ./usr/sbin/deluser   
-lrwxrwxrwx 	 0/0 	 ./usr/sbin/dpkg-divert -> ../bin/dpkg-divert 
 -rwxr-xr-x 	 0/0 	 ./usr/sbin/dpkg-preconfigure   
 -rwxr-xr-x 	 0/0 	 ./usr/sbin/dpkg-reconfigure   
-lrwxrwxrwx 	 0/0 	 ./usr/sbin/dpkg-statoverride -> ../bin/dpkg-statoverride 
 -rwxr-xr-x 	 0/0 	 ./usr/sbin/groupadd   
 -rwxr-xr-x 	 0/0 	 ./usr/sbin/groupdel   
 -rwxr-xr-x 	 0/0 	 ./usr/sbin/groupmod   
@@ -1496,7 +1480,6 @@ lrwxrwxrwx 	 0/0 	 ./usr/sbin/rmt -> /etc/alternatives/rmt
 -rwxr-xr-x 	 0/0 	 ./usr/sbin/service   
 -rwxr-xr-x 	 0/0 	 ./usr/sbin/tarcat   
 -rwxr-xr-x 	 0/0 	 ./usr/sbin/tzconfig   
-lrwxrwxrwx 	 0/0 	 ./usr/sbin/update-alternatives -> ../bin/update-alternatives 
 -rwxr-xr-x 	 0/0 	 ./usr/sbin/update-locale   
 -rwxr-xr-x 	 0/0 	 ./usr/sbin/update-rc.d   
 -rwxr-xr-x 	 0/0 	 ./usr/sbin/useradd   
@@ -1567,7 +1550,7 @@ drwxr-xr-x 	 0/0 	 ./usr/share/dpkg/
 -rw-r--r-- 	 0/0 	 ./usr/share/dpkg/abitable   
 -rw-r--r-- 	 0/0 	 ./usr/share/dpkg/cputable   
 -rw-r--r-- 	 0/0 	 ./usr/share/dpkg/ostable   
--rw-r--r-- 	 0/0 	 ./usr/share/dpkg/triplettable   
+-rw-r--r-- 	 0/0 	 ./usr/share/dpkg/tupletable   
 drwxr-xr-x 	 0/0 	 ./usr/share/gcc-6/   
 drwxr-xr-x 	 0/0 	 ./usr/share/gcc-6/python/   
 drwxr-xr-x 	 0/0 	 ./usr/share/gcc-6/python/libstdcxx/   
@@ -1631,7 +1614,6 @@ drwxr-xr-x 	 0/0 	 ./usr/share/lintian/overrides/
 -rw-r--r-- 	 0/0 	 ./usr/share/lintian/overrides/libcap2-bin   
 -rw-r--r-- 	 0/0 	 ./usr/share/lintian/overrides/libcurl3   
 -rw-r--r-- 	 0/0 	 ./usr/share/lintian/overrides/libcurl3-boringssl   
--rw-r--r-- 	 0/0 	 ./usr/share/lintian/overrides/libdb5.3   
 -rw-r--r-- 	 0/0 	 ./usr/share/lintian/overrides/libgcc1   
 -rw-r--r-- 	 0/0 	 ./usr/share/lintian/overrides/libpam-modules   
 -rw-r--r-- 	 0/0 	 ./usr/share/lintian/overrides/libpam-modules-bin   
@@ -1798,13 +1780,6 @@ drwxr-xr-x 	 0/0 	 ./usr/share/tabset/
 -rw-r--r-- 	 0/0 	 ./usr/share/tabset/vt100   
 -rw-r--r-- 	 0/0 	 ./usr/share/tabset/vt300   
 drwxr-xr-x 	 0/0 	 ./usr/share/terminfo/   
-drwxr-xr-x 	 0/0 	 ./usr/share/upstart/   
-drwxr-xr-x 	 0/0 	 ./usr/share/upstart/sessions/   
--rw-r--r-- 	 0/0 	 ./usr/share/upstart/sessions/gpg-agent.conf   
--rw-r--r-- 	 0/0 	 ./usr/share/upstart/sessions/no-pinentry-gnome3.conf   
-drwxr-xr-x 	 0/0 	 ./usr/share/upstart/systemd-session/   
-drwxr-xr-x 	 0/0 	 ./usr/share/upstart/systemd-session/upstart/   
--rw-r--r-- 	 0/0 	 ./usr/share/upstart/systemd-session/upstart/gpg-agent.override   
 drwxr-xr-x 	 0/0 	 ./usr/share/zoneinfo/   
 drwxr-xr-x 	 0/0 	 ./usr/share/zoneinfo/Etc/   
 lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT -> ../GMT 
@@ -1895,6 +1870,9 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-rw-r-- 	 0/0 	 ./var/lib/dpkg/info/adduser.templates   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/apt-transport-https.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/apt-transport-https.md5sums   
+-rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/apt-transport-https.postinst   
+-rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/apt-transport-https.postrm   
+-rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/apt-transport-https.prerm   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/apt.conffiles   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/apt.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/apt.md5sums   
@@ -1953,7 +1931,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/dpkg.md5sums   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/dpkg.postinst   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/dpkg.postrm   
--rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/dpkg.preinst   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/dpkg.prerm   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/findutils.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/findutils.md5sums   
@@ -1990,6 +1967,9 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libacl1:amd64.triggers   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libapt-pkg5.0:amd64.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libapt-pkg5.0:amd64.md5sums   
+-rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/libapt-pkg5.0:amd64.postinst   
+-rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/libapt-pkg5.0:amd64.postrm   
+-rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/libapt-pkg5.0:amd64.prerm   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libapt-pkg5.0:amd64.shlibs   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libapt-pkg5.0:amd64.symbols.lz   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libapt-pkg5.0:amd64.triggers   
@@ -2045,10 +2025,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 1000/1000 	 ./var/lib/dpkg/info/libcurl3-boringssl:amd64.shlibs   
 -rw-r--r-- 	 1000/1000 	 ./var/lib/dpkg/info/libcurl3-boringssl:amd64.triggers   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libcurl3:amd64.list   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libdb5.3:amd64.list   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libdb5.3:amd64.md5sums   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libdb5.3:amd64.shlibs   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libdb5.3:amd64.triggers   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libgcc1:amd64.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libgcc1:amd64.md5sums   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/libgcc1:amd64.postinst   
@@ -2065,11 +2041,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libgpg-error0:amd64.shlibs   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libgpg-error0:amd64.symbols.lz   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libgpg-error0:amd64.triggers   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libksba8:amd64.list   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libksba8:amd64.md5sums   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libksba8:amd64.shlibs   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libksba8:amd64.symbols.lz   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libksba8:amd64.triggers   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblz4-1:amd64.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblz4-1:amd64.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblz4-1:amd64.shlibs   
@@ -2153,11 +2124,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libsepol1:amd64.shlibs   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libsepol1:amd64.symbols.lz   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libsepol1:amd64.triggers   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libsmartcols1:amd64.list   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libsmartcols1:amd64.md5sums   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libsmartcols1:amd64.shlibs   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libsmartcols1:amd64.symbols.lz   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libsmartcols1:amd64.triggers   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libsqlite3-0:amd64.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libsqlite3-0:amd64.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libsqlite3-0:amd64.shlibs   
