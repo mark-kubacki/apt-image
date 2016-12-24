@@ -701,7 +701,7 @@ drwxr-xr-x 	 0/0 	 ./usr/lib/dpkg/methods/apt/
 drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/   
 drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/   
 drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/6/   
-lrwxrwxrwx 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/6.2.0 -> 6 
+lrwxrwxrwx 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/6.3.0 -> 6 
 drwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/   
 -rwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/gpg-check-pattern   
 -rwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/gpg-preset-passphrase   
