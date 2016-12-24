@@ -15,6 +15,23 @@ If in doubt use `16.04`.
 
 [![Docker image](https://img.shields.io/badge/Docker-blitznote%2Fdebootstrap-blue.svg)](https://hub.docker.com/r/blitznote/debootstrap-amd64/) ← https://github.com/Blitznote/docker-ubuntu-debootstrap
 
+## ACI and rkt
+
+This baseimage is available as ACI for **rkt**:
+
+```bash
+rkt trust --prefix blitznote.com
+
+rkt image fetch blitznote.com/ubuntu:16.04
+rkt image fetch blitznote.com/ubuntu:16.10
+rkt image fetch blitznote.com/ubuntu:17.04
+
+rkt image fetch blitznote.com/aci/base
+```
+
+The above images are 13 MiB when downloaded, and about the same size of the *Docker* images.
+Support for **dgr's**/**conti's** scripting is provided.
+
 Features
 --------
 
