@@ -1,12 +1,12 @@
 adduser 	 3.113+nmu3ubuntu4
-apt 	 1.3.3-3bn
-apt-transport-https 	 1.3.3-3bn
+apt 	 1.3.4-2bn
+apt-transport-https 	 1.3.4-2bn
 base-files 	 9.4ubuntu4.3
 bash 	 4.3-14ubuntu1.1
 bzip2 	 1.0.6-8
-ca-certificates 	 20161224
+ca-certificates 	 20170125
 coreutils 	 8.25-2ubuntu2
-curl 	 7.52.1-2dyn
+curl 	 7.52.1-105dyn
 dash 	 0.5.8-2.1ubuntu2
 debconf 	 1.5.58ubuntu1
 debianutils 	 4.7
@@ -23,7 +23,7 @@ hostname 	 3.16ubuntu2
 init-system-helpers 	 1.29ubuntu3
 jq 	 1.5+dfsg-17bn
 libacl1 	 2.2.52-3
-libapt-pkg5.0 	 1.3.3-3bn
+libapt-pkg5.0 	 1.3.4-2bn
 libassuan0 	 2.4.3-1
 libattr1 	 1:2.4.47-2
 libaudit-common 	 1:2.4.5-1ubuntu2
@@ -34,7 +34,7 @@ libc6 	 2.24-1bn0
 libcap2 	 1:2.25-1
 libcap2-bin 	 1:2.25-1
 libcurl3 	 7.99.9-1alias
-libcurl3-boringssl 	 7.52.1-2
+libcurl3-boringssl 	 7.52.1-105
 libgcc1 	 1:6.3.0-5bn
 libgcrypt20 	 1.7.3-4bn
 libgpg-error0 	 1.24-1

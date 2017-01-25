@@ -1574,6 +1574,7 @@ drwxr-xr-x 	 0/0 	 ./usr/share/i18n/charmaps/
 -rw-r--r-- 	 0/0 	 ./usr/share/i18n/charmaps/ANSI_X3.110-1983.gz   
 -rw-r--r-- 	 0/0 	 ./usr/share/i18n/charmaps/ANSI_X3.4-1968.gz   
 -rw-r--r-- 	 0/0 	 ./usr/share/i18n/charmaps/GBK.gz   
+-rw-r--r-- 	 0/0 	 ./usr/share/i18n/charmaps/IBM850.gz   
 -rw-r--r-- 	 0/0 	 ./usr/share/i18n/charmaps/ISO-8859-1.gz   
 -rw-r--r-- 	 0/0 	 ./usr/share/i18n/charmaps/UTF-8.gz   
 drwxr-xr-x 	 0/0 	 ./usr/share/i18n/locales/   
@@ -2022,8 +2023,8 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libcap2:amd64.symbols.lz   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libcap2:amd64.triggers   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libcurl3-boringssl:amd64.list   
--rw-r--r-- 	 1000/1000 	 ./var/lib/dpkg/info/libcurl3-boringssl:amd64.shlibs   
--rw-r--r-- 	 1000/1000 	 ./var/lib/dpkg/info/libcurl3-boringssl:amd64.triggers   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libcurl3-boringssl:amd64.shlibs   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libcurl3-boringssl:amd64.triggers   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libcurl3:amd64.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libgcc1:amd64.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libgcc1:amd64.md5sums   
