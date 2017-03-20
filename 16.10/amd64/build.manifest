@@ -4,8 +4,9 @@ apt-transport-https 	 1.3.4-2bn
 base-files 	 9.6ubuntu5
 bash 	 4.3-15ubuntu1
 bzip2 	 1.0.6-8build1
-ca-certificates 	 20170302
+ca-certificates 	 20170320
 coreutils 	 8.25-2ubuntu2
+cpio 	 2.11+dfsg-5ubuntu1
 curl 	 7.53.1-30dyn
 dash 	 0.5.8-2.3ubuntu1
 debconf 	 1.5.59ubuntu1

@@ -17,6 +17,7 @@ lrwxrwxrwx 	 0/0 	 ./bin/bzless -> bzmore
 -rwxr-xr-x 	 0/0 	 ./bin/chmod   
 -rwxr-xr-x 	 0/0 	 ./bin/chown   
 -rwxr-xr-x 	 0/0 	 ./bin/cp   
+-rwxr-xr-x 	 0/0 	 ./bin/cpio   
 -rwxr-xr-x 	 0/0 	 ./bin/dash   
 -rwxr-xr-x 	 0/0 	 ./bin/date   
 -rwxr-xr-x 	 0/0 	 ./bin/dd   
@@ -39,6 +40,8 @@ lrwxrwxrwx 	 0/0 	 ./bin/domainname -> hostname
 -rwxr-xr-x 	 0/0 	 ./bin/mkdir   
 -rwxr-xr-x 	 0/0 	 ./bin/mknod   
 -rwxr-xr-x 	 0/0 	 ./bin/mktemp   
+lrwxrwxrwx 	 0/0 	 ./bin/mt -> /etc/alternatives/mt 
+-rwxr-xr-x 	 0/0 	 ./bin/mt-gnu   
 -rwxr-xr-x 	 0/0 	 ./bin/mv   
 lrwxrwxrwx 	 0/0 	 ./bin/nisdomainname -> hostname 
 -rwxr-xr-x 	 0/0 	 ./bin/pwd   
@@ -91,6 +94,7 @@ lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzip -> /usr/bin/lzip.plzip
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzless -> /usr/bin/xzless 
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzma -> /usr/bin/xz 
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzmore -> /usr/bin/xzmore 
+lrwxrwxrwx 	 0/0 	 ./etc/alternatives/mt -> /bin/mt-gnu 
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/nawk -> /usr/bin/mawk 
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/pinentry -> /usr/bin/pinentry-curses 
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/rmt -> /usr/sbin/rmt-tar 
@@ -166,6 +170,7 @@ drwxr-xr-x 	 0/0 	 ./etc/logrotate.d/
 -rw-r--r-- 	 0/0 	 ./etc/logrotate.d/apt   
 -rw-r--r-- 	 0/0 	 ./etc/logrotate.d/dpkg   
 -rw-r--r-- 	 0/0 	 ./etc/lsb-release   
+-rw-r--r-- 	 0/0 	 ./etc/mime.types   
 drwxr-xr-x 	 0/0 	 ./etc/network/   
 -rw-r--r-- 	 0/0 	 ./etc/networks   
 -rw-r--r-- 	 0/0 	 ./etc/nsswitch.conf   
@@ -215,6 +220,7 @@ drwxr-xr-x 	 0/0 	 ./etc/security/namespace.d/
 drwxr-xr-x 	 0/0 	 ./etc/selinux/   
 -rw-r--r-- 	 0/0 	 ./etc/selinux/semanage.conf   
 lrwxrwxrwx 	 0/0 	 ./etc/service -> runit/runsvdir/default 
+-rw-r--r-- 	 0/0 	 ./etc/services   
 -rw-r----- 	 0/42 	 ./etc/shadow   
 -rw------- 	 0/0 	 ./etc/shadow-   
 -rw-r--r-- 	 0/0 	 ./etc/shells   
@@ -1856,6 +1862,7 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/alternatives/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/builtins.7.gz   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/lzip   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/lzma   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/mt   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/pinentry   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/rmt   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/unzip   
@@ -1906,6 +1913,10 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/coreutils.md5sums   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/coreutils.postinst   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/coreutils.postrm   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/cpio.list   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/cpio.md5sums   
+-rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/cpio.postinst   
+-rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/cpio.prerm   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/curl.list   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/dash.config   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/dash.list   
