@@ -3,6 +3,7 @@
 # xargs --max-args=2 printf "%-60s %s\n" | \
 # sort
 
+application/aci                                              aci
 application/andrew-inset                                     ez
 application/annodex                                          anx
 application/atomcat+xml                                      atomcat
