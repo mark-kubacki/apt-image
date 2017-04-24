@@ -231,6 +231,7 @@ drwxr-xr-x 	 0/0 	 ./etc/skel/
 drwxr-xr-x 	 0/0 	 ./etc/ssl/   
 drwxr-xr-x 	 0/0 	 ./etc/ssl/certs/   
 -rw-r--r-- 	 0/0 	 ./etc/ssl/certs/ca-certificates.crt   
+-rw-r--r-- 	 0/0 	 ./etc/ssl/certs/sks-keyservers.netCA.pem   
 -rw-r--r-- 	 0/0 	 ./etc/subgid   
 -rw-r--r-- 	 0/0 	 ./etc/subuid   
 drwxr-xr-x 	 0/0 	 ./etc/terminfo/   
@@ -482,6 +483,7 @@ drwxr-xr-x 	 0/0 	 ./usr/bin/
 -rwxr-xr-x 	 0/0 	 ./usr/bin/apt-mark   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/arch   
 lrwxrwxrwx 	 0/0 	 ./usr/bin/awk -> /etc/alternatives/awk 
+-rwxr-xr-x 	 0/0 	 ./usr/bin/b2sum   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/base32   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/base64   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/basename   
@@ -784,8 +786,8 @@ drwxr-xr-x 	 0/0 	 ./usr/lib/x86_64-linux-gnu/gconv/
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/gconv/UTF-7.so   
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/gconv/gconv-modules   
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache   
-lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-pkg.so.5.0 -> libapt-pkg.so.5.0.0 
--rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-pkg.so.5.0.0   
+lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-pkg.so.5.0 -> libapt-pkg.so.5.0.1 
+-rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-pkg.so.5.0.1   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-private.so.0.0 -> libapt-private.so.0.0.0 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-private.so.0.0.0   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libassuan.so.0 -> libassuan.so.0.7.3 
