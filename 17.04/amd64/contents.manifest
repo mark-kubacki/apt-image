@@ -128,6 +128,7 @@ drwxr-xr-x 	 0/0 	 ./etc/cron.weekly/
 -rw-r--r-- 	 0/0 	 ./etc/debian_version   
 drwxr-xr-x 	 0/0 	 ./etc/default/   
 -rw-r--r-- 	 0/0 	 ./etc/default/locale   
+-rw-r--r-- 	 0/0 	 ./etc/default/motd-news   
 -rw-r--r-- 	 0/0 	 ./etc/default/nss   
 -rw-r--r-- 	 0/0 	 ./etc/default/useradd   
 -rw-r--r-- 	 0/0 	 ./etc/deluser.conf   
@@ -244,6 +245,8 @@ drwxr-xr-x 	 0/0 	 ./lib/systemd/
 drwxr-xr-x 	 0/0 	 ./lib/systemd/system/   
 -rw-r--r-- 	 0/0 	 ./lib/systemd/system/apt-daily.service   
 -rw-r--r-- 	 0/0 	 ./lib/systemd/system/apt-daily.timer   
+-rw-r--r-- 	 0/0 	 ./lib/systemd/system/motd-news.service   
+-rw-r--r-- 	 0/0 	 ./lib/systemd/system/motd-news.timer   
 drwxr-xr-x 	 0/0 	 ./lib/terminfo/   
 drwxr-xr-x 	 0/0 	 ./lib/terminfo/E/   
 -rw-r--r-- 	 0/0 	 ./lib/terminfo/E/Eterm   
@@ -332,10 +335,10 @@ lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libcrypt.so.1 -> libcrypt-2.25.so
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libdl-2.25.so   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libdl.so.2 -> libdl-2.25.so 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcc_s.so.1   
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20 -> libgcrypt.so.20.1.3 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20.1.3   
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0 -> libgpg-error.so.0.19.1 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0.19.1   
+lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20 -> libgcrypt.so.20.1.6 
+-rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20.1.6   
+lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0 -> libgpg-error.so.0.21.0 
+-rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0.21.0   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libhistory.so.7 -> libhistory.so.7.0 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libhistory.so.7.0   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5 -> liblzma.so.5.2.2 
@@ -390,8 +393,8 @@ lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libtinfo.so.5 -> libtinfo.so.5.9
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libtinfo.so.5.9   
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libutil-2.25.so   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libutil.so.1 -> libutil-2.25.so 
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libz.so.1 -> libz.so.1.2.8 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libz.so.1.2.8   
+lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libz.so.1 -> libz.so.1.2.11 
+-rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libz.so.1.2.11   
 drwxr-xr-x 	 0/0 	 ./lib/x86_64-linux-gnu/security/   
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/security/pam_access.so   
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/security/pam_debug.so   
@@ -494,7 +497,6 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/awk -> /etc/alternatives/awk
 -rwsr-xr-x 	 0/0 	 ./usr/bin/chfn   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/chpst   
 -rwsr-xr-x 	 0/0 	 ./usr/bin/chsh   
--rwxr-xr-x 	 0/0 	 ./usr/bin/cksum   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/clear_console   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/cmp   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/comm   
@@ -577,7 +579,6 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/lzma -> /etc/alternatives/lzma
 -rwxr-xr-x 	 0/0 	 ./usr/bin/lzmainfo   
 lrwxrwxrwx 	 0/0 	 ./usr/bin/lzmore -> /etc/alternatives/lzmore 
 -rwxr-xr-x 	 0/0 	 ./usr/bin/mawk   
--rwxr-xr-x 	 0/0 	 ./usr/bin/md5sum   
 lrwxrwxrwx 	 0/0 	 ./usr/bin/md5sum.textutils -> md5sum 
 -rwxr-xr-x 	 0/0 	 ./usr/bin/migrate-pubring-from-classic-gpg   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/miniunzip   
@@ -621,7 +622,6 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/pstree.x11 -> pstree
 -rwxr-xr-x 	 0/0 	 ./usr/bin/sensible-editor   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/sensible-pager   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/seq   
--rwxr-xr-x 	 0/0 	 ./usr/bin/sha1sum   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/sha256sum   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/sha512sum   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/shred   
@@ -631,7 +631,6 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/pstree.x11 -> pstree
 -rwxr-xr-x 	 0/0 	 ./usr/bin/split   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/stat   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/stdbuf   
--rwxr-xr-x 	 0/0 	 ./usr/bin/sum   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/sv   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/svlogd   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/symcryptrun   
@@ -800,14 +799,16 @@ lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl.so.4 -> libcurl-boringssl.
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl.so.4.4.0 -> libcurl-boringssl.so.4.4.0 
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libformw.so.5 -> libformw.so.5.9 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libformw.so.5.9   
+lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/liblz.so.1 -> liblz.so.1.8 
+-rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/liblz.so.1.8   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/liblz4.so.1 -> liblz4.so.1.7.1 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/liblz4.so.1.7.1   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libmenuw.so.5 -> libmenuw.so.5.9 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libmenuw.so.5.9   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libminizip.so.1 -> libminizip.so.1.0.0 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libminizip.so.1.0.0   
-lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libnpth.so.0 -> libnpth.so.0.0.5 
--rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libnpth.so.0.0.5   
+lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libnpth.so.0 -> libnpth.so.0.0.6 
+-rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libnpth.so.0.0.6   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libonig.so.2 -> libonig.so.2.0.1 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libonig.so.2.0.1   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libpanelw.so.5 -> libpanelw.so.5.9 
@@ -1898,6 +1899,9 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/base-files.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/base-files.md5sums   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/base-files.postinst   
+-rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/base-files.postrm   
+-rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/base-files.preinst   
+-rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/base-files.prerm   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/base-passwd.list   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/base-passwd.postrm   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/bash.conffiles   
@@ -2057,6 +2061,10 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libgpg-error0:amd64.shlibs   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libgpg-error0:amd64.symbols.lz   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libgpg-error0:amd64.triggers   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblz1.list   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblz1.md5sums   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblz1.shlibs   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblz1.triggers   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblz4-1:amd64.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblz4-1:amd64.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblz4-1:amd64.shlibs   
@@ -2159,10 +2167,9 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libtinfo5:amd64.triggers   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libustr-1.0-1:amd64.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libustr-1.0-1:amd64.md5sums   
--rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/libustr-1.0-1:amd64.postinst   
--rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/libustr-1.0-1:amd64.postrm   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libustr-1.0-1:amd64.shlibs   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libustr-1.0-1:amd64.symbols.lz   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libustr-1.0-1:amd64.triggers   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/locales.conffiles   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/locales.config   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/locales.list   
@@ -2263,8 +2270,10 @@ drwxr-xr-x 	 0/0 	 ./var/lib/pam/
 drwxr-xr-x 	 0/0 	 ./var/lib/systemd/   
 drwxr-xr-x 	 0/0 	 ./var/lib/systemd/deb-systemd-helper-enabled/   
 -rw-r--r-- 	 0/0 	 ./var/lib/systemd/deb-systemd-helper-enabled/apt-daily.timer.dsh-also   
+-rw-r--r-- 	 0/0 	 ./var/lib/systemd/deb-systemd-helper-enabled/motd-news.timer.dsh-also   
 drwxr-xr-x 	 0/0 	 ./var/lib/systemd/deb-systemd-helper-enabled/timers.target.wants/   
 -rw-r--r-- 	 0/0 	 ./var/lib/systemd/deb-systemd-helper-enabled/timers.target.wants/apt-daily.timer   
+-rw-r--r-- 	 0/0 	 ./var/lib/systemd/deb-systemd-helper-enabled/timers.target.wants/motd-news.timer   
 drwxrwsr-x 	 0/50 	 ./var/local/   
 lrwxrwxrwx 	 0/0 	 ./var/lock -> /run/lock 
 drwxr-xr-x 	 0/0 	 ./var/log/   
