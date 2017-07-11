@@ -85,8 +85,6 @@ drwxr-xr-x 	 0/0 	 ./etc/
 drwxr-xr-x 	 0/0 	 ./etc/alternatives/   
 -rw-r--r-- 	 0/0 	 ./etc/alternatives/README   
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/awk -> /usr/bin/mawk 
-lrwxrwxrwx 	 0/0 	 ./etc/alternatives/gnupg -> /usr/bin/gpg2 
-lrwxrwxrwx 	 0/0 	 ./etc/alternatives/gpgv -> /usr/bin/gpgv2 
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzcat -> /usr/bin/xzcat 
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzcmp -> /usr/bin/xzcmp 
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzdiff -> /usr/bin/xzdiff 
@@ -341,10 +339,10 @@ lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libcrypt.so.1 -> libcrypt-2.25.so
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libdl-2.25.so   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libdl.so.2 -> libdl-2.25.so 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcc_s.so.1   
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20 -> libgcrypt.so.20.1.3 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20.1.3   
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0 -> libgpg-error.so.0.19.1 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0.19.1   
+lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20 -> libgcrypt.so.20.1.8 
+-rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20.1.8   
+lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0 -> libgpg-error.so.0.22.0 
+-rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0.22.0   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libhistory.so.6 -> libhistory.so.6.3 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libhistory.so.6.3   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5 -> liblzma.so.5.2.2 
@@ -550,14 +548,16 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/awk -> /etc/alternatives/awk
 -rwxr-xr-x 	 0/0 	 ./usr/bin/getent   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/getopt   
 -rwsr-xr-x 	 0/0 	 ./usr/bin/gpasswd   
-lrwxrwxrwx 	 0/0 	 ./usr/bin/gpg -> /etc/alternatives/gnupg 
+-rwxr-xr-x 	 0/0 	 ./usr/bin/gpg   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/gpg-agent   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/gpg-connect-agent   
--rwxr-xr-x 	 0/0 	 ./usr/bin/gpg2   
+-rwxr-xr-x 	 0/0 	 ./usr/bin/gpg-zip   
+lrwxrwxrwx 	 0/0 	 ./usr/bin/gpg2 -> gpg 
 -rwxr-xr-x 	 0/0 	 ./usr/bin/gpgconf   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/gpgparsemail   
-lrwxrwxrwx 	 0/0 	 ./usr/bin/gpgv -> /etc/alternatives/gpgv 
--rwxr-xr-x 	 0/0 	 ./usr/bin/gpgv2   
+-rwxr-xr-x 	 0/0 	 ./usr/bin/gpgsplit   
+-rwxr-xr-x 	 0/0 	 ./usr/bin/gpgv   
+lrwxrwxrwx 	 0/0 	 ./usr/bin/gpgv2 -> gpgv 
 -rwxr-xr-x 	 0/0 	 ./usr/bin/groups   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/head   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/hostid   
@@ -573,6 +573,7 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/gpgv -> /etc/alternatives/gpgv
 -rwxr-xr-x 	 0/0 	 ./usr/bin/locale   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/localedef   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/logname   
+-rwxr-xr-x 	 0/0 	 ./usr/bin/lspgpot   
 lrwxrwxrwx 	 0/0 	 ./usr/bin/lzcat -> /etc/alternatives/lzcat 
 lrwxrwxrwx 	 0/0 	 ./usr/bin/lzcmp -> /etc/alternatives/lzcmp 
 lrwxrwxrwx 	 0/0 	 ./usr/bin/lzdiff -> /etc/alternatives/lzdiff 
@@ -588,6 +589,7 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/lzmore -> /etc/alternatives/lzmore
 -rwxr-xr-x 	 0/0 	 ./usr/bin/mawk   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/md5sum   
 lrwxrwxrwx 	 0/0 	 ./usr/bin/md5sum.textutils -> md5sum 
+-rwxr-xr-x 	 0/0 	 ./usr/bin/migrate-pubring-from-classic-gpg   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/miniunzip   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/minizip   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/mkfifo   
@@ -718,12 +720,12 @@ drwxr-xr-x 	 0/0 	 ./usr/lib/dpkg/methods/apt/
 -rwxr-xr-x 	 0/0 	 ./usr/lib/dpkg/methods/apt/update   
 drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/   
 drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/   
-drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/6/   
-lrwxrwxrwx 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/6.3.0 -> 6 
-drwxr-xr-x 	 0/0 	 ./usr/lib/gnupg2/   
--rwxr-xr-x 	 0/0 	 ./usr/lib/gnupg2/gpg-check-pattern   
--rwxr-xr-x 	 0/0 	 ./usr/lib/gnupg2/gpg-preset-passphrase   
--rwxr-xr-x 	 0/0 	 ./usr/lib/gnupg2/gpg-protect-tool   
+drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/7/   
+lrwxrwxrwx 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/7.1.0 -> 7 
+drwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/   
+-rwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/gpg-check-pattern   
+-rwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/gpg-preset-passphrase   
+-rwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/gpg-protect-tool   
 drwxr-xr-x 	 0/0 	 ./usr/lib/locale/   
 -rw-r--r-- 	 0/0 	 ./usr/lib/locale/locale-archive   
 drwxr-xr-x 	 0/0 	 ./usr/lib/mime/   
@@ -825,8 +827,8 @@ lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libpcreposix.so.3 -> libpcreposix.
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libsemanage.so.1   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libsqlite3.so.0 -> libsqlite3.so.0.8.6 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6   
-lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libstdc++.so.6 -> libstdc++.so.6.0.22 
--rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22   
+lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libstdc++.so.6 -> libstdc++.so.6.0.24 
+-rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.24   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libtic.so.5 -> libtic.so.5.9 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libtic.so.5.9   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libustr-1.0.so.1 -> libustr-1.0.so.1.0.4 
@@ -1568,23 +1570,22 @@ drwxr-xr-x 	 0/0 	 ./usr/share/dpkg/
 -rw-r--r-- 	 0/0 	 ./usr/share/dpkg/cputable   
 -rw-r--r-- 	 0/0 	 ./usr/share/dpkg/ostable   
 -rw-r--r-- 	 0/0 	 ./usr/share/dpkg/tupletable   
-drwxr-xr-x 	 0/0 	 ./usr/share/gcc-6/   
-drwxr-xr-x 	 0/0 	 ./usr/share/gcc-6/python/   
-drwxr-xr-x 	 0/0 	 ./usr/share/gcc-6/python/libstdcxx/   
--rw-r--r-- 	 0/0 	 ./usr/share/gcc-6/python/libstdcxx/__init__.py   
-drwxr-xr-x 	 0/0 	 ./usr/share/gcc-6/python/libstdcxx/v6/   
--rw-r--r-- 	 0/0 	 ./usr/share/gcc-6/python/libstdcxx/v6/__init__.py   
--rw-r--r-- 	 0/0 	 ./usr/share/gcc-6/python/libstdcxx/v6/printers.py   
--rw-r--r-- 	 0/0 	 ./usr/share/gcc-6/python/libstdcxx/v6/xmethods.py   
+drwxr-xr-x 	 0/0 	 ./usr/share/gcc-7/   
+drwxr-xr-x 	 0/0 	 ./usr/share/gcc-7/python/   
+drwxr-xr-x 	 0/0 	 ./usr/share/gcc-7/python/libstdcxx/   
+-rw-r--r-- 	 0/0 	 ./usr/share/gcc-7/python/libstdcxx/__init__.py   
+drwxr-xr-x 	 0/0 	 ./usr/share/gcc-7/python/libstdcxx/v6/   
+-rw-r--r-- 	 0/0 	 ./usr/share/gcc-7/python/libstdcxx/v6/__init__.py   
+-rw-r--r-- 	 0/0 	 ./usr/share/gcc-7/python/libstdcxx/v6/printers.py   
+-rw-r--r-- 	 0/0 	 ./usr/share/gcc-7/python/libstdcxx/v6/xmethods.py   
 drwxr-xr-x 	 0/0 	 ./usr/share/gdb/   
 drwxr-xr-x 	 0/0 	 ./usr/share/gdb/auto-load/   
 drwxr-xr-x 	 0/0 	 ./usr/share/gdb/auto-load/usr/   
 drwxr-xr-x 	 0/0 	 ./usr/share/gdb/auto-load/usr/lib/   
 drwxr-xr-x 	 0/0 	 ./usr/share/gdb/auto-load/usr/lib/x86_64-linux-gnu/   
--rw-r--r-- 	 0/0 	 ./usr/share/gdb/auto-load/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22-gdb.py   
-drwxr-xr-x 	 0/0 	 ./usr/share/gnupg2/   
--rw-r--r-- 	 0/0 	 ./usr/share/gnupg2/distsigkey.gpg   
--rw-r--r-- 	 0/0 	 ./usr/share/gnupg2/gpg-conf.skel   
+-rw-r--r-- 	 0/0 	 ./usr/share/gdb/auto-load/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.24-gdb.py   
+drwxr-xr-x 	 0/0 	 ./usr/share/gnupg/   
+-rw-r--r-- 	 0/0 	 ./usr/share/gnupg/distsigkey.gpg   
 drwxr-xr-x 	 0/0 	 ./usr/share/i18n/   
 -rw-r--r-- 	 0/0 	 ./usr/share/i18n/SUPPORTED   
 drwxr-xr-x 	 0/0 	 ./usr/share/i18n/charmaps/   
@@ -1873,8 +1874,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/
 drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/alternatives/   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/awk   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/builtins.7.gz   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/gnupg   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/gpgv   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/lzip   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/lzma   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/mt   
@@ -1966,15 +1965,17 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/findutils.postinst   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/findutils.preinst   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/format   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gcc-6-base:amd64.list   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gcc-6-base:amd64.md5sums   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gcc-7-base:amd64.list   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gcc-7-base:amd64.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gnupg-agent.conffiles   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gnupg-agent.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gnupg-agent.md5sums   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gnupg.list   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gnupg.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gnupg2.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gnupg2.md5sums   
--rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/gnupg2.postinst   
--rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/gnupg2.preinst   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gpgv.list   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gpgv.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gpgv2.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gpgv2.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/grep.list   
