@@ -4,7 +4,7 @@ apt-transport-https 	 1.4-5bn
 base-files 	 9.6ubuntu5
 bash 	 4.3-15ubuntu1.1
 bzip2 	 1.0.6-8build1
-ca-certificates 	 20170803
+ca-certificates 	 20170804
 coreutils 	 8.26-3ubuntu3
 cpio 	 2.11+dfsg-5ubuntu1
 curl 	 7.54.1-154dyn
@@ -24,7 +24,7 @@ grep 	 2.25-6
 gzip 	 1.6-4ubuntu1
 hostname 	 3.18
 init-system-helpers 	 1.45
-jq 	 1.5+dfsg-17bn
+jq 	 1.5.2+dfsg-3bn
 libacl1 	 2.2.52-3
 libapt-pkg5.0 	 1.4-5bn
 libassuan0 	 2.4.3-2
@@ -76,7 +76,7 @@ readline-common 	 7.0-0ubuntu2
 runit 	 2.1.2-8ubuntu2
 sed 	 4.2.2-8
 sensible-utils 	 0.0.9
-signify-linux 	 1.106
+signify-linux 	 1.106.1-1bn
 tar 	 1.29b-1ubuntu0.1
 tzdata 	 2016j-0ubuntu0.16.10
 ubuntu-keyring 	 2016.09.19
