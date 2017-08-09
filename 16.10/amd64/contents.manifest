@@ -242,6 +242,8 @@ drwxr-xr-x 	 0/0 	 ./home/
 drwxr-xr-x 	 0/0 	 ./lib/   
 drwxr-xr-x 	 0/0 	 ./lib/systemd/   
 drwxr-xr-x 	 0/0 	 ./lib/systemd/system/   
+-rw-r--r-- 	 0/0 	 ./lib/systemd/system/apt-daily-upgrade.service   
+-rw-r--r-- 	 0/0 	 ./lib/systemd/system/apt-daily-upgrade.timer   
 -rw-r--r-- 	 0/0 	 ./lib/systemd/system/apt-daily.service   
 -rw-r--r-- 	 0/0 	 ./lib/systemd/system/apt-daily.timer   
 drwxr-xr-x 	 0/0 	 ./lib/terminfo/   
@@ -1875,9 +1877,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-rw-r-- 	 0/0 	 ./var/lib/dpkg/info/adduser.templates   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/apt-transport-https.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/apt-transport-https.md5sums   
--rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/apt-transport-https.postinst   
--rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/apt-transport-https.postrm   
--rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/apt-transport-https.prerm   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/apt.conffiles   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/apt.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/apt.md5sums   
@@ -1976,9 +1975,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libacl1:amd64.triggers   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libapt-pkg5.0:amd64.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libapt-pkg5.0:amd64.md5sums   
--rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/libapt-pkg5.0:amd64.postinst   
--rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/libapt-pkg5.0:amd64.postrm   
--rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/libapt-pkg5.0:amd64.prerm   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libapt-pkg5.0:amd64.shlibs   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libapt-pkg5.0:amd64.symbols.lz   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libapt-pkg5.0:amd64.triggers   
@@ -2255,8 +2251,10 @@ drwxr-xr-x 	 0/0 	 ./var/lib/pam/
 -rw-r--r-- 	 0/0 	 ./var/lib/pam/session-noninteractive   
 drwxr-xr-x 	 0/0 	 ./var/lib/systemd/   
 drwxr-xr-x 	 0/0 	 ./var/lib/systemd/deb-systemd-helper-enabled/   
+-rw-r--r-- 	 0/0 	 ./var/lib/systemd/deb-systemd-helper-enabled/apt-daily-upgrade.timer.dsh-also   
 -rw-r--r-- 	 0/0 	 ./var/lib/systemd/deb-systemd-helper-enabled/apt-daily.timer.dsh-also   
 drwxr-xr-x 	 0/0 	 ./var/lib/systemd/deb-systemd-helper-enabled/timers.target.wants/   
+-rw-r--r-- 	 0/0 	 ./var/lib/systemd/deb-systemd-helper-enabled/timers.target.wants/apt-daily-upgrade.timer   
 -rw-r--r-- 	 0/0 	 ./var/lib/systemd/deb-systemd-helper-enabled/timers.target.wants/apt-daily.timer   
 drwxrwsr-x 	 0/50 	 ./var/local/   
 lrwxrwxrwx 	 0/0 	 ./var/lock -> /run/lock 
