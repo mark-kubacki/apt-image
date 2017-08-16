@@ -22,7 +22,6 @@ lrwxrwxrwx 	 0/0 	 ./bin/bzless -> bzmore
 -rwxr-xr-x 	 0/0 	 ./bin/date   
 -rwxr-xr-x 	 0/0 	 ./bin/dd   
 -rwxr-xr-x 	 0/0 	 ./bin/df   
--rwxr-xr-x 	 0/0 	 ./bin/dir   
 lrwxrwxrwx 	 0/0 	 ./bin/dnsdomainname -> hostname 
 lrwxrwxrwx 	 0/0 	 ./bin/domainname -> hostname 
 -rwxr-xr-x 	 0/0 	 ./bin/echo   
@@ -63,7 +62,6 @@ lrwxrwxrwx 	 0/0 	 ./bin/sh.distrib -> dash
 -rwxr-xr-x 	 0/0 	 ./bin/true   
 -rwxr-xr-x 	 0/0 	 ./bin/uname   
 hrwxr-xr-x 	 0/0 	 ./bin/uncompress link to ./bin/gunzip
--rwxr-xr-x 	 0/0 	 ./bin/vdir   
 -rwxr-xr-x 	 0/0 	 ./bin/which   
 lrwxrwxrwx 	 0/0 	 ./bin/ypdomainname -> hostname 
 -rwxr-xr-x 	 0/0 	 ./bin/zcat   
@@ -111,6 +109,7 @@ drwxr-xr-x 	 0/0 	 ./etc/apt/apt.conf.d/
 -rw-r--r-- 	 0/0 	 ./etc/apt/apt.conf.d/compressor-lzip   
 -rw-r--r-- 	 0/0 	 ./etc/apt/apt.conf.d/docker-tuning   
 drwxr-xr-x 	 0/0 	 ./etc/apt/preferences.d/   
+-rw-r--r-- 	 0/0 	 ./etc/apt/preferences.d/backports   
 -rw-r--r-- 	 0/0 	 ./etc/apt/preferences.d/from-blitznote   
 -rw-r--r-- 	 0/0 	 ./etc/apt/sources.list   
 drwxr-xr-x 	 0/0 	 ./etc/apt/sources.list.d/   
@@ -158,9 +157,6 @@ drwxr-xr-x 	 0/0 	 ./etc/init.d/
 -rw-r--r-- 	 0/0 	 ./etc/inputrc   
 -rw-r--r-- 	 0/0 	 ./etc/issue   
 -rw-r--r-- 	 0/0 	 ./etc/issue.net   
-drwxr-xr-x 	 0/0 	 ./etc/kernel/   
-drwxr-xr-x 	 0/0 	 ./etc/kernel/postinst.d/   
--rwxr-xr-x 	 0/0 	 ./etc/kernel/postinst.d/apt-auto-removal   
 -rw-r--r-- 	 0/0 	 ./etc/ld.so.cache   
 -rw-r--r-- 	 0/0 	 ./etc/ld.so.conf   
 drwxr-xr-x 	 0/0 	 ./etc/ld.so.conf.d/   
@@ -249,12 +245,6 @@ drwxr-xr-x 	 0/0 	 ./lib/lsb/init-functions.d/
 -rw-r--r-- 	 0/0 	 ./lib/lsb/init-functions.d/20-left-info-blocks   
 -rw-r--r-- 	 0/0 	 ./lib/lsb/init-functions.d/50-ubuntu-logging   
 drwxr-xr-x 	 0/0 	 ./lib/systemd/   
-drwxr-xr-x 	 0/0 	 ./lib/systemd/system/   
--rw-r--r-- 	 0/0 	 ./lib/systemd/system/apt-daily-upgrade.service   
--rw-r--r-- 	 0/0 	 ./lib/systemd/system/apt-daily-upgrade.timer   
--rw-r--r-- 	 0/0 	 ./lib/systemd/system/apt-daily.service   
--rw-r--r-- 	 0/0 	 ./lib/systemd/system/apt-daily.timer   
--rw-r--r-- 	 0/0 	 ./lib/systemd/system/runit.service   
 drwxr-xr-x 	 0/0 	 ./lib/terminfo/   
 drwxr-xr-x 	 0/0 	 ./lib/terminfo/E/   
 -rw-r--r-- 	 0/0 	 ./lib/terminfo/E/Eterm   
@@ -495,7 +485,6 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/awk -> /etc/alternatives/awk
 -rwxr-xr-x 	 0/0 	 ./usr/bin/basename   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/bashbug   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/catchsegv   
--rwxr-sr-x 	 0/42 	 ./usr/bin/chage   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/chcon   
 -rwsr-xr-x 	 0/0 	 ./usr/bin/chfn   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/chpst   
@@ -550,8 +539,6 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/awk -> /etc/alternatives/awk
 -rwxr-xr-x 	 0/0 	 ./usr/bin/gpg-zip   
 lrwxrwxrwx 	 0/0 	 ./usr/bin/gpg2 -> gpg 
 -rwxr-xr-x 	 0/0 	 ./usr/bin/gpgconf   
--rwxr-xr-x 	 0/0 	 ./usr/bin/gpgparsemail   
--rwxr-xr-x 	 0/0 	 ./usr/bin/gpgsplit   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/gpgv   
 lrwxrwxrwx 	 0/0 	 ./usr/bin/gpgv2 -> gpgv 
 -rwxr-xr-x 	 0/0 	 ./usr/bin/groups   
@@ -613,7 +600,6 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/plzip -> lzip.plzip
 -rwxr-xr-x 	 0/0 	 ./usr/bin/prtstat   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/pstree   
 lrwxrwxrwx 	 0/0 	 ./usr/bin/pstree.x11 -> pstree 
--rwxr-xr-x 	 0/0 	 ./usr/bin/ptx   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/realpath   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/rgrep   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/runcon   
@@ -631,7 +617,6 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/pstree.x11 -> pstree
 -rwxr-xr-x 	 0/0 	 ./usr/bin/sha256sum   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/sha512sum   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/shred   
--rwxr-xr-x 	 0/0 	 ./usr/bin/shuf   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/signify   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/sort   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/split   
@@ -640,8 +625,6 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/pstree.x11 -> pstree
 -rwxr-xr-x 	 0/0 	 ./usr/bin/sum   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/sv   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/svlogd   
--rwxr-xr-x 	 0/0 	 ./usr/bin/symcryptrun   
--rwxr-xr-x 	 0/0 	 ./usr/bin/tac   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/tail   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/taskset   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/tee   
@@ -650,7 +633,6 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/pstree.x11 -> pstree
 lrwxrwxrwx 	 0/0 	 ./usr/bin/touch -> /bin/touch 
 -rwxr-xr-x 	 0/0 	 ./usr/bin/tr   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/truncate   
--rwxr-xr-x 	 0/0 	 ./usr/bin/tsort   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/tty   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/tzselect   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/unexpand   
@@ -717,7 +699,7 @@ drwxr-xr-x 	 0/0 	 ./usr/lib/dpkg/methods/apt/
 drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/   
 drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/   
 drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/7/   
-lrwxrwxrwx 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/7.1.0 -> 7 
+lrwxrwxrwx 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/7.2.0 -> 7 
 drwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/   
 -rwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/gpg-check-pattern   
 -rwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/gpg-preset-passphrase   
@@ -2281,13 +2263,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/pam/
 -rw-r--r-- 	 0/0 	 ./var/lib/pam/session   
 -rw-r--r-- 	 0/0 	 ./var/lib/pam/session-noninteractive   
 drwxr-xr-x 	 0/0 	 ./var/lib/supervise/   
-drwxr-xr-x 	 0/0 	 ./var/lib/systemd/   
-drwxr-xr-x 	 0/0 	 ./var/lib/systemd/deb-systemd-helper-enabled/   
--rw-r--r-- 	 0/0 	 ./var/lib/systemd/deb-systemd-helper-enabled/apt-daily-upgrade.timer.dsh-also   
--rw-r--r-- 	 0/0 	 ./var/lib/systemd/deb-systemd-helper-enabled/apt-daily.timer.dsh-also   
-drwxr-xr-x 	 0/0 	 ./var/lib/systemd/deb-systemd-helper-enabled/timers.target.wants/   
--rw-r--r-- 	 0/0 	 ./var/lib/systemd/deb-systemd-helper-enabled/timers.target.wants/apt-daily-upgrade.timer   
--rw-r--r-- 	 0/0 	 ./var/lib/systemd/deb-systemd-helper-enabled/timers.target.wants/apt-daily.timer   
 drwxrwsr-x 	 0/50 	 ./var/local/   
 lrwxrwxrwx 	 0/0 	 ./var/lock -> /run/lock 
 drwxr-xr-x 	 0/0 	 ./var/log/   
