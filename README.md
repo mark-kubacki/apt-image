@@ -113,7 +113,9 @@ I have published a script which automates that.
 
 ### Hints
 
-Leveraging git's "textconv" you can track changes to the archive files. Run:
+Leveraging git's "textconv" you can track changes to the archive files.
+This merely changes how diffs are displayed.
+Run:
 
 ```bash
 git config --global diff.tar.textconv "tar -tavf"
@@ -123,7 +125,22 @@ git config --global diff.debian-tarball.textconv "tar --to-stdout -x ./var/lib/d
 git config --global diff.debian-tarball.cachetextconv true
 ```
 
-This merely changes how diffs are displayed.
+You can use **screen** and **tmux**, for example for long-running processes on Container Linux distributions.
+Run something that does not return first. Then, utilize `script` with `docker exec -ti`:
+
+```bash
+# on the host:
+docker run -d --name "myenv" blitznote/debootstrap-amd64:16.04 /bin/bash
+
+# Now use this "permanent environment" like this:
+docker exec -ti myenv script -q -c "/bin/bash" /dev/null
+
+# Voila! screen/tmux will work as usual, including redraws on resized terminals.
+screen -m -- rtorrent
+screen -wipe
+screen -r
+…
+```
 
 Caveats
 -------
