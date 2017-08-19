@@ -331,8 +331,8 @@ lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libcrypt.so.1 -> libcrypt-2.26.so
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libdl-2.26.so   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libdl.so.2 -> libdl-2.26.so 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcc_s.so.1   
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20 -> libgcrypt.so.20.1.8 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20.1.8   
+lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20 -> libgcrypt.so.20.2.0 
+-rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20.2.0   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0 -> libgpg-error.so.0.22.0 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0.22.0   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libhistory.so.6 -> libhistory.so.6.3 
@@ -485,6 +485,7 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/awk -> /etc/alternatives/awk
 -rwxr-xr-x 	 0/0 	 ./usr/bin/basename   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/bashbug   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/catchsegv   
+-rwxr-sr-x 	 0/42 	 ./usr/bin/chage   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/chcon   
 -rwsr-xr-x 	 0/0 	 ./usr/bin/chfn   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/chpst   
