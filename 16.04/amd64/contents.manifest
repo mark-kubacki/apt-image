@@ -121,7 +121,6 @@ drwxr-xr-x 	 0/0 	 ./etc/cron.daily/
 -rwxr-xr-x 	 0/0 	 ./etc/cron.daily/apt-compat   
 -rwxr-xr-x 	 0/0 	 ./etc/cron.daily/dpkg   
 -rwxr-xr-x 	 0/0 	 ./etc/cron.daily/passwd   
-drwxr-xr-x 	 0/0 	 ./etc/cron.weekly/   
 -rw-r--r-- 	 0/0 	 ./etc/debconf.conf   
 -rw-r--r-- 	 0/0 	 ./etc/debian_version   
 drwxr-xr-x 	 0/0 	 ./etc/default/   
@@ -146,13 +145,8 @@ lrwxrwxrwx 	 0/0 	 ./etc/dpkg/origins/default -> ubuntu
 drwxr-xr-x 	 0/0 	 ./etc/init/   
 -rw-r--r-- 	 0/0 	 ./etc/init/hostname.conf   
 -rw-r--r-- 	 0/0 	 ./etc/init/hostname.sh.conf   
--rw-r--r-- 	 0/0 	 ./etc/init/hwclock-save.conf   
--rw-r--r-- 	 0/0 	 ./etc/init/hwclock.conf   
--rw-r--r-- 	 0/0 	 ./etc/init/hwclock.sh.conf   
 -rw-r--r-- 	 0/0 	 ./etc/init/passwd.conf   
 -rw-r--r-- 	 0/0 	 ./etc/init/runsvdir.conf   
-drwxr-xr-x 	 0/0 	 ./etc/init.d/   
--rwxr-xr-x 	 0/0 	 ./etc/init.d/hwclock.sh   
 -rw-r--r-- 	 0/0 	 ./etc/inittab   
 -rw-r--r-- 	 0/0 	 ./etc/inputrc   
 -rw-r--r-- 	 0/0 	 ./etc/issue   
@@ -167,7 +161,6 @@ drwxr-xr-x 	 0/0 	 ./etc/ld.so.conf.d/
 -rw-r--r-- 	 0/0 	 ./etc/locale.alias   
 -rw-r--r-- 	 0/0 	 ./etc/locale.gen   
 lrwxrwxrwx 	 0/0 	 ./etc/localtime -> /usr/share/zoneinfo/Etc/UTC 
--rw-r--r-- 	 0/0 	 ./etc/login.defs   
 drwxr-xr-x 	 0/0 	 ./etc/logrotate.d/   
 -rw-r--r-- 	 0/0 	 ./etc/logrotate.d/apt   
 -rw-r--r-- 	 0/0 	 ./etc/logrotate.d/dpkg   
@@ -178,29 +171,18 @@ drwxr-xr-x 	 0/0 	 ./etc/network/
 -rw-r--r-- 	 0/0 	 ./etc/nsswitch.conf   
 drwxr-xr-x 	 0/0 	 ./etc/opt/   
 -rw-r--r-- 	 0/0 	 ./etc/os-release   
--rw-r--r-- 	 0/0 	 ./etc/pam.conf   
 drwxr-xr-x 	 0/0 	 ./etc/pam.d/   
 -rw-r--r-- 	 0/0 	 ./etc/pam.d/chfn   
 -rw-r--r-- 	 0/0 	 ./etc/pam.d/chpasswd   
 -rw-r--r-- 	 0/0 	 ./etc/pam.d/chsh   
--rw-r--r-- 	 0/0 	 ./etc/pam.d/common-account   
--rw-r--r-- 	 0/0 	 ./etc/pam.d/common-auth   
--rw-r--r-- 	 0/0 	 ./etc/pam.d/common-password   
--rw-r--r-- 	 0/0 	 ./etc/pam.d/common-session   
 -rw-r--r-- 	 0/0 	 ./etc/pam.d/common-session-noninteractive   
--rw-r--r-- 	 0/0 	 ./etc/pam.d/login   
 -rw-r--r-- 	 0/0 	 ./etc/pam.d/newusers   
--rw-r--r-- 	 0/0 	 ./etc/pam.d/other   
 -rw-r--r-- 	 0/0 	 ./etc/pam.d/passwd   
--rw-r--r-- 	 0/0 	 ./etc/pam.d/runuser   
--rw-r--r-- 	 0/0 	 ./etc/pam.d/runuser-l   
--rw-r--r-- 	 0/0 	 ./etc/pam.d/su   
 -rw-r--r-- 	 0/0 	 ./etc/passwd   
 -rw------- 	 0/0 	 ./etc/passwd-   
 -rw-r--r-- 	 0/0 	 ./etc/profile   
 drwxr-xr-x 	 0/0 	 ./etc/profile.d/   
 -rwxr-xr-x 	 0/0 	 ./etc/rmt   
--rw-r--r-- 	 0/0 	 ./etc/securetty   
 drwxr-xr-x 	 0/0 	 ./etc/security/   
 -rw-r--r-- 	 0/0 	 ./etc/security/access.conf   
 -rw-r--r-- 	 0/0 	 ./etc/security/group.conf   
@@ -725,7 +707,6 @@ drwxr-xr-x 	 0/0 	 ./usr/lib/systemd/user/graphical-session-pre.target.wants/
 lrwxrwxrwx 	 0/0 	 ./usr/lib/systemd/user/graphical-session-pre.target.wants/gpg-agent.service -> ../gpg-agent.service 
 drwxr-xr-x 	 0/0 	 ./usr/lib/tar/   
 drwxr-xr-x 	 0/0 	 ./usr/lib/tmpfiles.d/   
--rw-r--r-- 	 0/0 	 ./usr/lib/tmpfiles.d/passwd.conf   
 drwxr-xr-x 	 0/0 	 ./usr/lib/x86_64-cros-linux-gnu/   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-cros-linux-gnu/libcurl-boringssl.so.3 -> libcurl-boringssl.so.4.4.0 
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-cros-linux-gnu/libcurl-boringssl.so.4 -> libcurl-boringssl.so.4.4.0 
@@ -1766,10 +1747,6 @@ drwxr-xr-x 	 0/0 	 ./usr/share/perl5/Debian/
 drwxr-xr-x 	 0/0 	 ./usr/share/perl5/Debian/DebConf/   
 drwxr-xr-x 	 0/0 	 ./usr/share/perl5/Debian/DebConf/Client/   
 -rw-r--r-- 	 0/0 	 ./usr/share/perl5/Debian/DebConf/Client/ConfModule.pm   
-drwxr-xr-x 	 0/0 	 ./usr/share/pixmaps/   
--rw-r--r-- 	 0/0 	 ./usr/share/pixmaps/debian-logo.png   
--rw-r--r-- 	 0/0 	 ./usr/share/pixmaps/pstree16.xpm   
--rw-r--r-- 	 0/0 	 ./usr/share/pixmaps/pstree32.xpm   
 drwxr-xr-x 	 0/0 	 ./usr/share/readline/   
 -rw-r--r-- 	 0/0 	 ./usr/share/readline/inputrc   
 drwxr-xr-x 	 0/0 	 ./usr/share/runit/   
@@ -1886,8 +1863,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/base-files.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/base-files.md5sums   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/base-files.postinst   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/base-passwd.list   
--rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/base-passwd.postrm   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/bash.conffiles   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/bash.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/bash.md5sums   
@@ -1995,8 +1970,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libaudit1:amd64.shlibs   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libaudit1:amd64.symbols.lz   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libaudit1:amd64.triggers   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libblkid1:amd64.list   
--rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/libblkid1:amd64.postrm   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libbz2-1.0:amd64.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libbz2-1.0:amd64.md5sums   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/libbz2-1.0:amd64.postinst   
@@ -2084,8 +2057,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/libpam-modules:amd64.postrm   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/libpam-modules:amd64.preinst   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libpam-modules:amd64.templates   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libpam-runtime.list   
--rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/libpam-runtime.postrm   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libpam0g:amd64.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libpam0g:amd64.md5sums   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/libpam0g:amd64.postinst   
@@ -2159,7 +2130,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/locales.postrm   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/locales.prerm   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/locales.templates   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/login.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/lsb-base.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/lsb-base.md5sums   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/lsb-base.postinst   
@@ -2235,8 +2205,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/ubuntu-keyring.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/ubuntu-keyring.md5sums   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/ubuntu-keyring.postinst   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/util-linux.list   
--rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/util-linux.postrm   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/xz-utils.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/xz-utils.md5sums   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/xz-utils.postinst   
@@ -2257,11 +2225,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/triggers/
 drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/updates/   
 drwxr-xr-x 	 0/0 	 ./var/lib/misc/   
 drwxr-xr-x 	 0/0 	 ./var/lib/pam/   
--rw-r--r-- 	 0/0 	 ./var/lib/pam/account   
--rw-r--r-- 	 0/0 	 ./var/lib/pam/auth   
--rw-r--r-- 	 0/0 	 ./var/lib/pam/password   
--rw-r--r-- 	 0/0 	 ./var/lib/pam/seen   
--rw-r--r-- 	 0/0 	 ./var/lib/pam/session   
 -rw-r--r-- 	 0/0 	 ./var/lib/pam/session-noninteractive   
 drwxr-xr-x 	 0/0 	 ./var/lib/supervise/   
 drwxrwsr-x 	 0/50 	 ./var/local/   
