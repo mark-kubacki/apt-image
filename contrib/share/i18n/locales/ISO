@@ -1,7 +1,7 @@
 escape_char /
 comment_char %
 % Locale for internationalized C locale in UTF-8
-% Contributed by W. Mark Kubacki <wmark@hurrikane.de>, 2014
+% Contributed by W. Mark Kubacki <wmark@hurrikane.de>, 2014–2017
 
 LC_IDENTIFICATION
 title      "internationalized C locale in UTF-8"
@@ -13,21 +13,21 @@ tel        ""
 fax        "+49-5131-50597-01"
 language   "C"
 territory  ""
-revision   "1.1"
-date       "2016-01-24"
+revision   "1.2"
+date       "2017-08-25"
 %
-category  "C@ISO:2014";LC_IDENTIFICATION
-category  "C@ISO:2014";LC_CTYPE
-category  "C@ISO:2014";LC_COLLATE
-category  "C@ISO:2014";LC_TIME
-category  "C@ISO:2014";LC_NUMERIC
-category  "C@ISO:2014";LC_PAPER
-category  "C@ISO:2014";LC_MEASUREMENT
-category  "C@ISO:2014";LC_MONETARY
-category  "C@ISO:2014";LC_MESSAGES
-category  "C@ISO:2014";LC_NAME
-category  "C@ISO:2014";LC_ADDRESS
-category  "C@ISO:2014";LC_TELEPHONE
+category "i18n:2012";LC_IDENTIFICATION
+category "i18n:2012";LC_CTYPE
+category "i18n:2012";LC_COLLATE
+category "i18n:2012";LC_TIME
+category "i18n:2012";LC_NUMERIC
+category "i18n:2012";LC_PAPER
+category "i18n:2012";LC_MEASUREMENT
+category "i18n:2012";LC_MONETARY
+category "i18n:2012";LC_MESSAGES
+category "i18n:2012";LC_NAME
+category "i18n:2012";LC_ADDRESS
+category "i18n:2012";LC_TELEPHONE
 END LC_IDENTIFICATION
 
 LC_CTYPE
