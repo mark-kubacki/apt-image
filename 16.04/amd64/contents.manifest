@@ -161,6 +161,7 @@ drwxr-xr-x 	 0/0 	 ./etc/ld.so.conf.d/
 -rw-r--r-- 	 0/0 	 ./etc/locale.alias   
 -rw-r--r-- 	 0/0 	 ./etc/locale.gen   
 lrwxrwxrwx 	 0/0 	 ./etc/localtime -> /usr/share/zoneinfo/Etc/UTC 
+-rw-r--r-- 	 0/0 	 ./etc/login.defs   
 drwxr-xr-x 	 0/0 	 ./etc/logrotate.d/   
 -rw-r--r-- 	 0/0 	 ./etc/logrotate.d/apt   
 -rw-r--r-- 	 0/0 	 ./etc/logrotate.d/dpkg   
@@ -176,8 +177,10 @@ drwxr-xr-x 	 0/0 	 ./etc/pam.d/
 -rw-r--r-- 	 0/0 	 ./etc/pam.d/chpasswd   
 -rw-r--r-- 	 0/0 	 ./etc/pam.d/chsh   
 -rw-r--r-- 	 0/0 	 ./etc/pam.d/common-session-noninteractive   
+-rw-r--r-- 	 0/0 	 ./etc/pam.d/login   
 -rw-r--r-- 	 0/0 	 ./etc/pam.d/newusers   
 -rw-r--r-- 	 0/0 	 ./etc/pam.d/passwd   
+-rw-r--r-- 	 0/0 	 ./etc/pam.d/su   
 -rw-r--r-- 	 0/0 	 ./etc/passwd   
 -rw------- 	 0/0 	 ./etc/passwd-   
 -rw-r--r-- 	 0/0 	 ./etc/profile   
