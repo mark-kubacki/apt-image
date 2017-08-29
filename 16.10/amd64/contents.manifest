@@ -173,10 +173,17 @@ drwxr-xr-x 	 0/0 	 ./etc/pam.d/
 -rw-r--r-- 	 0/0 	 ./etc/pam.d/chfn   
 -rw-r--r-- 	 0/0 	 ./etc/pam.d/chpasswd   
 -rw-r--r-- 	 0/0 	 ./etc/pam.d/chsh   
+-rw-r--r-- 	 0/0 	 ./etc/pam.d/common-account   
+-rw-r--r-- 	 0/0 	 ./etc/pam.d/common-auth   
+-rw-r--r-- 	 0/0 	 ./etc/pam.d/common-password   
+-rw-r--r-- 	 0/0 	 ./etc/pam.d/common-session   
 -rw-r--r-- 	 0/0 	 ./etc/pam.d/common-session-noninteractive   
 -rw-r--r-- 	 0/0 	 ./etc/pam.d/login   
 -rw-r--r-- 	 0/0 	 ./etc/pam.d/newusers   
+-rw-r--r-- 	 0/0 	 ./etc/pam.d/other   
 -rw-r--r-- 	 0/0 	 ./etc/pam.d/passwd   
+-rw-r--r-- 	 0/0 	 ./etc/pam.d/runuser   
+-rw-r--r-- 	 0/0 	 ./etc/pam.d/runuser-l   
 -rw-r--r-- 	 0/0 	 ./etc/pam.d/su   
 -rw-r--r-- 	 0/0 	 ./etc/passwd   
 -rw------- 	 0/0 	 ./etc/passwd-   
@@ -472,6 +479,7 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/awk -> /etc/alternatives/awk
 -rwxr-xr-x 	 0/0 	 ./usr/bin/cksum   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/clear_console   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/cmp   
+-rwxr-xr-x 	 0/0 	 ./usr/bin/column   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/comm   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/csplit   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/curl   

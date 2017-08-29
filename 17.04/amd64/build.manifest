@@ -4,7 +4,7 @@ apt-transport-https 	 1.4.6-6bn
 base-files 	 9.6ubuntu13
 bash 	 4.4-12bn11
 bzip2 	 1.0.6-8.1
-ca-certificates 	 20170828
+ca-certificates 	 20170829
 coreutils 	 8.27-8bn
 cpio 	 2.11+dfsg-6
 curl 	 7.55.1-52dyn
