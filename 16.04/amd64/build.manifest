@@ -4,7 +4,7 @@ apt-transport-https 	 1.4.6-6bn
 base-files 	 9.4ubuntu4.5
 bash 	 4.4-12bn11
 bzip2 	 1.0.6-8
-ca-certificates 	 20170829
+ca-certificates 	 20170905
 coreutils 	 8.27-8bn
 cpio 	 2.11+dfsg-5ubuntu1
 curl 	 7.55.1-52dyn
@@ -15,11 +15,11 @@ diffutils 	 1:3.3-3
 dpkg 	 1.18.24ubuntu1
 findutils 	 4.6.0+git+20160126-2
 gcc-7-base 	 7.2.0-28bn
-gnupg 	 2.1.23-9bn
-gnupg-agent 	 2.1.23-9bn
-gnupg2 	 2.1.23-9bn
-gpgv 	 2.1.23-9bn
-gpgv2 	 2.1.23-9bn
+gnupg 	 2.2.0-10bn
+gnupg-agent 	 2.2.0-10bn
+gnupg2 	 2.2.0-10bn
+gpgv 	 2.2.0-10bn
+gpgv2 	 2.2.0-10bn
 grep 	 2.25-1~16.04.1
 gzip 	 1.6-4ubuntu1
 hostname 	 3.16ubuntu2
@@ -39,7 +39,7 @@ libcap2-bin 	 1:2.25-1
 libcurl3 	 7.99.9-1alias
 libcurl3-boringssl 	 7.55.1-52
 libgcc1 	 1:7.2.0-28bn
-libgcrypt20 	 1.8.0-10bn
+libgcrypt20 	 1.8.1-11bn
 libgpg-error0 	 1.27-5bn
 liblz4-1 	 0.0~r131-2ubuntu2
 liblzma5 	 5.2.2-1.2.8bn
