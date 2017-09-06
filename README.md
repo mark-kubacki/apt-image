@@ -5,16 +5,16 @@ Ever wondered why Ubuntu for Docker comes with *systemd* and tools for filesyste
 Yeah, [me](https://twitter.com/murmosh) too.
 These are container images without that fuzz.
 
-* blitznote/debootstrap-amd64:17.04 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:17.04.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 17.04 on MicroBadger.com")
-* blitznote/debootstrap-amd64:16.10 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:16.10.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 16.10 on MicroBadger.com")
-* blitznote/debootstrap-amd64:16.04 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:16.04.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 16.04 on MicroBadger.com")
-* blitznote/debootstrap-amd64:15.10 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:15.10.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "obsolete Ubuntu 15.10 on MicroBadger.com") [EOL]
+* blitznote/debase:17.04 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:17.04.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 17.04 on MicroBadger.com")
+* blitznote/debase:16.10 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:16.10.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 16.10 on MicroBadger.com")
+* blitznote/debase:16.04 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:16.04.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 16.04 on MicroBadger.com")
+* blitznote/debase:15.10 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:15.10.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "obsolete Ubuntu 15.10 on MicroBadger.com") [EOL]
 
 If in doubt use `16.04`.
 
-![size comparison: Ubuntu for Docker 120MB, ubuntu-debootstrap 87MB, blitznote/debootstrap-amd64 55MB](https://rawgit.com/Blitznote/docker-ubuntu-debootstrap/master/ubuntu-for-Docker-sizes.svg)
+![size comparison: Ubuntu for Docker 120MB, ubuntu-debootstrap 87MB, blitznote/debase 39MB](https://rawgit.com/Blitznote/docker-ubuntu-debootstrap/master/ubuntu-for-Docker-sizes.svg)
 
-[![Docker image](https://img.shields.io/badge/Docker-blitznote%2Fdebootstrap-blue.svg)](https://hub.docker.com/r/blitznote/debootstrap-amd64/) ← https://github.com/Blitznote/docker-ubuntu-debootstrap
+[![Docker image](https://img.shields.io/badge/Docker-blitznote%2Fdebootstrap-blue.svg)](https://hub.docker.com/r/blitznote/debootstrap-amd64/) ← https://github.com/Blitznote/debase
 
 ## ACI and rkt
 
@@ -88,7 +88,6 @@ To downgrade *Perl* to use packages from Ubuntu only:
 . /etc/os-release
 
 # 16.04 - xenial
-# 16.10 - yakkety
 apt-get -t ${UBUNTU_CODENAME} --allow-downgrades -y install perl-base=5.22*
 ```
 
@@ -130,7 +129,7 @@ Run something that does not return first. Then, utilize `script` with `docker ex
 
 ```bash
 # on the host:
-docker run -d --name "myenv" blitznote/debootstrap-amd64:16.04 /bin/bash
+docker run -d --name "myenv" blitznote/debase:16.04 /bin/bash
 
 # Now use this "permanent environment" like this:
 docker exec -ti myenv script -q -c "/bin/bash" /dev/null
@@ -151,6 +150,6 @@ Caveats
   accompanying logline `trap invalid opcode` (run `dmesg` or check your syslog daemon for details).
 * CPUs preceding *AMD family `15h`* and *Intel's Westmere* will not work.  
   *Intel Edison* as well as *KNL* is supported.
-* You need Linux 3.10.0 or later. Version 3.18.0 or later is strongly recommended.
+* You need Linux 3.16.0 or later. Version 3.18.0 or later is strongly recommended.
 * Kernel support for **Seccomp** is strongly recommended.
   `zgrep SECCOMP /proc/config.gz`

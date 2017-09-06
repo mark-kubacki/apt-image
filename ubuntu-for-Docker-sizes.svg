@@ -51,7 +51,7 @@ text.legend {
 	<title>size of the Ubuntu docker image</title>
 	<desc>about 120 MiB on disk</desc>
 	<g aria-hidden="true">
-		<text x="165" y="69" text-anchor="end">Ubuntu</text>
+		<text x="165" y="69" text-anchor="end">docker.io/ubuntu</text>
 		<rect x="175" y="58" fill="#00B4D6" width="401" height="16"/>
 		<rect x="175" y="58" fill="#435469" width="160" height="16"/>
 		<text x="576" y="88" text-anchor="end" class="imagesize">120 MiB</text>
@@ -62,7 +62,7 @@ text.legend {
 	<title>docker image "ubuntu-debootstrap"</title>
 	<desc>is about 87 MiB on disk, two-thirds of "Ubuntu"</desc>
 	<g aria-hidden="true">
-		<text x="165" y="121.2" text-anchor="end">Ubuntu-debootstrap</text>
+		<text x="165" y="121.2" text-anchor="end">docker.io/ubuntu-debootstrap</text>
 		<rect x="175" y="110" fill="#00B4D6" width="290" height="16"/>
 		<rect x="175" y="110" fill="#435469" width="117" height="16"/>
 		<text x="465" y="140.6" text-anchor="end" class="imagesize">87 MiB</text>
@@ -72,7 +72,7 @@ text.legend {
 <g>
 	<title>this docker image</title>
 	<desc>is 39 MiB on disk, just one third of the "Ubuntu" docker image</desc>
-	<text x="165" y="173.7" text-anchor="end"><a xlink:href="https://hub.docker.com/r/blitznote/debootstrap-amd64/" target="_blank">blitznote/debootstrap-amd64</a></text>
+	<text x="165" y="173.7" text-anchor="end"><a xlink:href="https://hub.docker.com/r/blitznote/debootstrap-amd64/" target="_blank">blitznote/debase</a></text>
 	<g aria-hidden="true">
 		<rect x="175" y="162" fill="#00B4D6" width="130" height="16"><title>38.4 MiB</title></rect>
 		<rect x="175" y="162" fill="#435469" width="53" height="16"><title>16 MiB</title></rect>
