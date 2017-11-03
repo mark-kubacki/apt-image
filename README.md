@@ -5,10 +5,10 @@ Ever wondered why Ubuntu for Docker comes with *systemd* and tools for filesyste
 Yeah, [me](https://twitter.com/murmosh) too.
 These are container images without that fuzz.
 
+* blitznote/debase:17.10 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:17.10.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 17.10 on MicroBadger.com")
 * blitznote/debase:17.04 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:17.04.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 17.04 on MicroBadger.com")
-* blitznote/debase:16.10 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:16.10.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 16.10 on MicroBadger.com")
+* blitznote/debase:16.10 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:16.10.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 16.10 on MicroBadger.com") [EOL]
 * blitznote/debase:16.04 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:16.04.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 16.04 on MicroBadger.com")
-* blitznote/debase:15.10 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:15.10.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "obsolete Ubuntu 15.10 on MicroBadger.com") [EOL]
 
 If in doubt use `16.04`.
 
@@ -24,8 +24,8 @@ This baseimages are available as ACI for **rkt**:
 rkt trust --prefix blitznote.com
 
 rkt image fetch blitznote.com/ubuntu:16.04
-rkt image fetch blitznote.com/ubuntu:16.10
 rkt image fetch blitznote.com/ubuntu:17.04
+rkt image fetch blitznote.com/ubuntu:17.10
 ```
 
 Above images are 13 MiB when downloaded, and extracted about the same size as images for *Docker*.  
