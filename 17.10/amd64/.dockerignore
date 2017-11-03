@@ -1,0 +1,4 @@
+*.asc
+*.manifest
+*.sig
+extra.tar*

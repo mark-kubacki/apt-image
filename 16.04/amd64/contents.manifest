@@ -340,8 +340,6 @@ lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libncursesw.so.5 -> libncursesw.so.5.9
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libncursesw.so.5.9   
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libnsl-2.26.so   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libnsl.so.1 -> libnsl-2.26.so 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libnss_db-2.26.so   
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libnss_db.so.2 -> libnss_db-2.26.so 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libnss_dns-2.26.so   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libnss_dns.so.2 -> libnss_dns-2.26.so 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libnss_files-2.26.so   
@@ -665,14 +663,16 @@ drwxr-xr-x 	 0/0 	 ./usr/lib/apt/methods/
 lrwxrwxrwx 	 0/0 	 ./usr/lib/apt/methods/bzip2 -> store 
 -rwxr-xr-x 	 0/0 	 ./usr/lib/apt/methods/cdrom   
 -rwxr-xr-x 	 0/0 	 ./usr/lib/apt/methods/copy   
+-rwxr-xr-x 	 0/0 	 ./usr/lib/apt/methods/curl   
+lrwxrwxrwx 	 0/0 	 ./usr/lib/apt/methods/curl+http -> curl 
+lrwxrwxrwx 	 0/0 	 ./usr/lib/apt/methods/curl+https -> curl 
 -rwxr-xr-x 	 0/0 	 ./usr/lib/apt/methods/file   
 -rwxr-xr-x 	 0/0 	 ./usr/lib/apt/methods/ftp   
 -rwxr-xr-x 	 0/0 	 ./usr/lib/apt/methods/gpgv   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/apt/methods/gzip -> store 
--rwxr-xr-x 	 0/0 	 ./usr/lib/apt/methods/http   
--rwxr-xr-x 	 0/0 	 ./usr/lib/apt/methods/https   
+lrwxrwxrwx 	 0/0 	 ./usr/lib/apt/methods/http -> curl 
+lrwxrwxrwx 	 0/0 	 ./usr/lib/apt/methods/https -> curl 
 lrwxrwxrwx 	 0/0 	 ./usr/lib/apt/methods/lzma -> store 
--rwxr-xr-x 	 0/0 	 ./usr/lib/apt/methods/mirror   
 -rwxr-xr-x 	 0/0 	 ./usr/lib/apt/methods/rred   
 -rwxr-xr-x 	 0/0 	 ./usr/lib/apt/methods/rsh   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/apt/methods/ssh -> rsh 
@@ -719,9 +719,9 @@ lrwxrwxrwx 	 0/0 	 ./usr/lib/systemd/user/graphical-session-pre.target.wants/gpg
 drwxr-xr-x 	 0/0 	 ./usr/lib/tar/   
 drwxr-xr-x 	 0/0 	 ./usr/lib/tmpfiles.d/   
 drwxr-xr-x 	 0/0 	 ./usr/lib/x86_64-cros-linux-gnu/   
-lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-cros-linux-gnu/libcurl-boringssl.so.3 -> libcurl-boringssl.so.4.4.0 
-lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-cros-linux-gnu/libcurl-boringssl.so.4 -> libcurl-boringssl.so.4.4.0 
--rwxr-xr-x 	 0/0 	 ./usr/lib/x86_64-cros-linux-gnu/libcurl-boringssl.so.4.4.0   
+lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-cros-linux-gnu/libcurl-boringssl.so.3 -> libcurl-boringssl.so.4.5.0 
+lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-cros-linux-gnu/libcurl-boringssl.so.4 -> libcurl-boringssl.so.4.5.0 
+-rwxr-xr-x 	 0/0 	 ./usr/lib/x86_64-cros-linux-gnu/libcurl-boringssl.so.4.5.0   
 drwxr-xr-x 	 0/0 	 ./usr/lib/x86_64-linux-gnu/   
 drwxr-xr-x 	 0/0 	 ./usr/lib/x86_64-linux-gnu/audit/   
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/audit/sotruss-lib.so   
@@ -767,18 +767,17 @@ drwxr-xr-x 	 0/0 	 ./usr/lib/x86_64-linux-gnu/gconv/
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/gconv/UTF-7.so   
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/gconv/gconv-modules   
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache   
-lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-pkg.so.5.0 -> libapt-pkg.so.5.0.1 
--rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-pkg.so.5.0.1   
+lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-pkg.so.5.0 -> libapt-pkg.so.5.0.2 
+-rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-pkg.so.5.0.2   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-private.so.0.0 -> libapt-private.so.0.0.0 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-private.so.0.0.0   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libassuan.so.0 -> libassuan.so.0.7.3 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libassuan.so.0.7.3   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl-boringssl.so.3 -> ../x86_64-cros-linux-gnu/libcurl-boringssl.so.3 
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl-boringssl.so.4 -> ../x86_64-cros-linux-gnu/libcurl-boringssl.so.4 
-lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl-boringssl.so.4.4.0 -> ../x86_64-cros-linux-gnu/libcurl-boringssl.so.4.4.0 
+lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl-boringssl.so.4.5.0 -> ../x86_64-cros-linux-gnu/libcurl-boringssl.so.4.5.0 
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl.so.3 -> libcurl-boringssl.so.3 
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl.so.4 -> libcurl-boringssl.so.4 
-lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl.so.4.4.0 -> libcurl-boringssl.so.4.4.0 
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libformw.so.5 -> libformw.so.5.9 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libformw.so.5.9   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/liblz4.so.1 -> liblz4.so.1.7.1 
