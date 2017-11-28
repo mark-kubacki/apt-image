@@ -144,12 +144,11 @@ screen -r
 Caveats
 -------
 
-* Images for architecture *amd64*/x86_64 require instruction set **SSE 4**, which had been introduced in 2007.
+* Images for architecture *amd64*/x86_64 require instruction set **SSE 4**, which has been introduced in 2007.  
   If you don't have a reasonably recent CPU you will eventually run into the `illegal instruction` error.
   Another symptom of missing instruction sets is message `Sub-process… exited unexpectedly` with its
   accompanying logline `trap invalid opcode` (run `dmesg` or check your syslog daemon for details).
-* CPUs preceding *AMD family `15h`* and *Intel's Westmere* will not work.  
+* CPUs preceding *AMD family `15h`* and *Intel's Ivy Bridge* will not work.  
   *Intel Edison* as well as *KNL* is supported.
-* You need Linux 3.16.0 or later. Version 3.18.0 or later is strongly recommended.
-* Kernel support for **Seccomp** is strongly recommended.
+* You need Linux 4.4.0 or later, with **Seccomp** for sandboxing of processes.  
   `zgrep SECCOMP /proc/config.gz`
