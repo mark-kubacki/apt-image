@@ -7,7 +7,6 @@ These are container images without that fuzz.
 
 * blitznote/debase:17.10 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:17.10.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 17.10 on MicroBadger.com")
 * blitznote/debase:17.04 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:17.04.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 17.04 on MicroBadger.com")
-* blitznote/debase:16.10 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:16.10.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 16.10 on MicroBadger.com") [EOL]
 * blitznote/debase:16.04 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:16.04.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 16.04 on MicroBadger.com")
 
 If in doubt use `16.04`.
