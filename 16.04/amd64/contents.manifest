@@ -1769,8 +1769,8 @@ drwxr-xr-x 	 0/0 	 ./usr/share/tabset/
 drwxr-xr-x 	 0/0 	 ./usr/share/terminfo/   
 drwxr-xr-x 	 0/0 	 ./usr/share/zoneinfo/   
 drwxr-xr-x 	 0/0 	 ./usr/share/zoneinfo/Etc/   
-lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT -> ../GMT+0 
-lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT+0 -> ../GMT+0 
+lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT -> ../GMT 
+lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT+0 -> ../GMT 
 -rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT+1   
 -rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT+10   
 -rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT+11   
@@ -1783,7 +1783,7 @@ lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT+0 -> ../GMT+0
 -rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT+7   
 -rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT+8   
 -rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT+9   
-lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT-0 -> ../GMT+0 
+lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT-0 -> ../GMT 
 -rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT-1   
 -rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT-10   
 -rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT-11   
@@ -1798,14 +1798,14 @@ lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT-0 -> ../GMT+0
 -rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT-7   
 -rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT-8   
 -rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT-9   
-lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT0 -> ../GMT+0 
-lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/Greenwich -> ../GMT+0 
+lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/GMT0 -> ../GMT 
+lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/Greenwich -> ../GMT 
 lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/UCT -> ../UCT 
 lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/UTC -> ../Zulu 
 lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/Universal -> ../Zulu 
 lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Etc/Zulu -> ../Zulu 
 -rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/Factory   
-lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/GMT -> GMT+0 
+-rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/GMT   
 -rw-r--r-- 	 0/0 	 ./usr/share/zoneinfo/UCT   
 lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/UTC -> Zulu 
 lrwxrwxrwx 	 0/0 	 ./usr/share/zoneinfo/Universal -> Zulu 
