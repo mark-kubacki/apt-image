@@ -108,6 +108,7 @@ drwxr-xr-x 	 0/0 	 ./etc/apt/apt.conf.d/
 -rw-r--r-- 	 0/0 	 ./etc/apt/apt.conf.d/compressor-lzip   
 -rw-r--r-- 	 0/0 	 ./etc/apt/apt.conf.d/docker-tuning   
 drwxr-xr-x 	 0/0 	 ./etc/apt/preferences.d/   
+-rw-r--r-- 	 0/0 	 ./etc/apt/preferences.d/00docker   
 -rw-r--r-- 	 0/0 	 ./etc/apt/preferences.d/from-blitznote   
 -rw-r--r-- 	 0/0 	 ./etc/apt/sources.list   
 drwxr-xr-x 	 0/0 	 ./etc/apt/sources.list.d/   
@@ -320,8 +321,8 @@ lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libcrypt.so.1 -> libcrypt-2.26.so
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libdl-2.26.so   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libdl.so.2 -> libdl-2.26.so 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcc_s.so.1   
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20 -> libgcrypt.so.20.2.1 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20.2.1   
+lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20 -> libgcrypt.so.20.2.2 
+-rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20.2.2   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0 -> libgpg-error.so.0.22.0 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0.22.0   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libhistory.so.6 -> libhistory.so.6.3 
@@ -757,8 +758,8 @@ lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-pkg.so.5.0 -> libapt-pkg.so
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-pkg.so.5.0.2   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-private.so.0.0 -> libapt-private.so.0.0.0 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-private.so.0.0.0   
-lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libassuan.so.0 -> libassuan.so.0.7.3 
--rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libassuan.so.0.7.3   
+lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libassuan.so.0 -> libassuan.so.0.8.1 
+-rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libassuan.so.0.8.1   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl-boringssl.so.3 -> ../x86_64-cros-linux-gnu/libcurl-boringssl.so.3 
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl-boringssl.so.4 -> ../x86_64-cros-linux-gnu/libcurl-boringssl.so.4 
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl-boringssl.so.4.5.0 -> ../x86_64-cros-linux-gnu/libcurl-boringssl.so.4.5.0 
