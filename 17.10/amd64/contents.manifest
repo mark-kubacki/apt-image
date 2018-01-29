@@ -572,8 +572,8 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/nawk -> /etc/alternatives/nawk
 -rwxr-xr-x 	 0/0 	 ./usr/bin/paste   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/pathchk   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/peekfd   
-lrwxrwxrwx 	 0/0 	 ./usr/bin/perl -> /usr/bin/perl5.26.0 
--rwxr-xr-x 	 0/0 	 ./usr/bin/perl5.26.0   
+lrwxrwxrwx 	 0/0 	 ./usr/bin/perl -> /usr/bin/perl5.26.1 
+-rwxr-xr-x 	 0/0 	 ./usr/bin/perl5.26.1   
 lrwxrwxrwx 	 0/0 	 ./usr/bin/pinentry -> /etc/alternatives/pinentry 
 -rwxr-xr-x 	 0/0 	 ./usr/bin/pinentry-curses   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/pinky   
@@ -681,7 +681,7 @@ drwxr-xr-x 	 0/0 	 ./usr/lib/dpkg/methods/apt/
 drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/   
 drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/   
 drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/7/   
-lrwxrwxrwx 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/7.2.0 -> 7 
+lrwxrwxrwx 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/7.3.0 -> 7 
 drwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/   
 -rwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/gpg-check-pattern   
 -rwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/gpg-preset-passphrase   
