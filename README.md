@@ -83,18 +83,7 @@ To downgrade *Perl* to use packages from Ubuntu only:
 
 ```bash
 . /etc/os-release
-
-# 16.04 - xenial
-apt-get -t ${UBUNTU_CODENAME} --allow-downgrades -y install perl-base=5.22*
-```
-
-If you intend to use this Docker image for building packages, you will need to uncompress
-the shipped version files first:
-
-```bash
-find /var/lib/dpkg/info -type f -name '*.lz' \
-| xargs --max-args=1 --max-procs=$(nproc) --no-run-if-empty \
-  plzip --keep -d
+apt-get -t ${UBUNTU_CODENAME} --allow-downgrades -y install perl-base
 ```
 
 Regenerate the Images
