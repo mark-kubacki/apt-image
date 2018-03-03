@@ -83,6 +83,8 @@ drwxr-xr-x 	 0/0 	 ./etc/
 drwxr-xr-x 	 0/0 	 ./etc/alternatives/   
 -rw-r--r-- 	 0/0 	 ./etc/alternatives/README   
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/awk -> /usr/bin/mawk 
+lrwxrwxrwx 	 0/0 	 ./etc/alternatives/gnupg2 -> /usr/bin/gpg 
+lrwxrwxrwx 	 0/0 	 ./etc/alternatives/gpgv2 -> /usr/bin/gpgv 
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzcat -> /usr/bin/xzcat 
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzcmp -> /usr/bin/xzcmp 
 lrwxrwxrwx 	 0/0 	 ./etc/alternatives/lzdiff -> /usr/bin/xzdiff 
@@ -163,6 +165,9 @@ drwxr-xr-x 	 0/0 	 ./etc/ld.so.conf.d/
 -rw-r--r-- 	 0/0 	 ./etc/locale.alias   
 -rw-r--r-- 	 0/0 	 ./etc/locale.gen   
 lrwxrwxrwx 	 0/0 	 ./etc/localtime -> /usr/share/zoneinfo/Etc/UTC 
+drwxr-xr-x 	 0/0 	 ./etc/logcheck/   
+drwxr-xr-x 	 0/0 	 ./etc/logcheck/ignore.d.server/   
+-rw-r--r-- 	 0/0 	 ./etc/logcheck/ignore.d.server/gpg-agent   
 -rw-r--r-- 	 0/0 	 ./etc/login.defs   
 drwxr-xr-x 	 0/0 	 ./etc/logrotate.d/   
 -rw-r--r-- 	 0/0 	 ./etc/logrotate.d/alternatives   
@@ -297,9 +302,6 @@ lrwxrwxrwx 	 0/0 	 ./lib/terminfo/x/xterm-debian -> xterm
 -rw-r--r-- 	 0/0 	 ./lib/terminfo/x/xterm-r6   
 -rw-r--r-- 	 0/0 	 ./lib/terminfo/x/xterm-vt220   
 -rw-r--r-- 	 0/0 	 ./lib/terminfo/x/xterm-xfree86   
-drwxr-xr-x 	 0/0 	 ./lib/udev/   
-drwxr-xr-x 	 0/0 	 ./lib/udev/rules.d/   
--rw-r--r-- 	 0/0 	 ./lib/udev/rules.d/60-gnupg2.rules   
 drwxr-xr-x 	 0/0 	 ./lib/x86_64-linux-gnu/   
 -rwxr-xr-x 	 0/0 	 ./lib/x86_64-linux-gnu/ld-2.27.so   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 -> ld-2.27.so 
@@ -332,8 +334,6 @@ lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20 -> libgcrypt.so.20.2.2
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20.2.2   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0 -> libgpg-error.so.0.22.0 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0.22.0   
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libhistory.so.6 -> libhistory.so.6.3 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libhistory.so.6.3   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5 -> liblzma.so.5.2.2 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5.2.2   
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libm-2.27.so   
@@ -366,8 +366,6 @@ lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libpcre.so.3 -> libpcre.so.3.13.3
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libpcre.so.3.13.3   
 -rwxr-xr-x 	 0/0 	 ./lib/x86_64-linux-gnu/libpthread-2.27.so   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libpthread.so.0 -> libpthread-2.27.so 
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libreadline.so.6 -> libreadline.so.6.3 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libreadline.so.6.3   
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libresolv-2.27.so   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libresolv.so.2 -> libresolv-2.27.so 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/librt-2.27.so   
@@ -537,11 +535,10 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/awk -> /etc/alternatives/awk
 -rwxr-xr-x 	 0/0 	 ./usr/bin/gpg   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/gpg-agent   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/gpg-connect-agent   
--rwxr-xr-x 	 0/0 	 ./usr/bin/gpg-zip   
-lrwxrwxrwx 	 0/0 	 ./usr/bin/gpg2 -> gpg 
+lrwxrwxrwx 	 0/0 	 ./usr/bin/gpg2 -> /etc/alternatives/gnupg2 
 -rwxr-xr-x 	 0/0 	 ./usr/bin/gpgconf   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/gpgv   
-lrwxrwxrwx 	 0/0 	 ./usr/bin/gpgv2 -> gpgv 
+lrwxrwxrwx 	 0/0 	 ./usr/bin/gpgv2 -> /etc/alternatives/gpgv2 
 -rwxr-xr-x 	 0/0 	 ./usr/bin/groups   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/head   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/hostid   
@@ -557,7 +554,6 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/gpgv2 -> gpgv
 -rwxr-xr-x 	 0/0 	 ./usr/bin/locale   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/localedef   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/logname   
--rwxr-xr-x 	 0/0 	 ./usr/bin/lspgpot   
 lrwxrwxrwx 	 0/0 	 ./usr/bin/lzcat -> /etc/alternatives/lzcat 
 lrwxrwxrwx 	 0/0 	 ./usr/bin/lzcmp -> /etc/alternatives/lzcmp 
 lrwxrwxrwx 	 0/0 	 ./usr/bin/lzdiff -> /etc/alternatives/lzdiff 
@@ -573,7 +569,6 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/lzmore -> /etc/alternatives/lzmore
 -rwxr-xr-x 	 0/0 	 ./usr/bin/mawk   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/md5sum   
 lrwxrwxrwx 	 0/0 	 ./usr/bin/md5sum.textutils -> md5sum 
--rwxr-xr-x 	 0/0 	 ./usr/bin/migrate-pubring-from-classic-gpg   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/miniunzip   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/minizip   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/mkfifo   
@@ -644,7 +639,6 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/unxz -> xz
 lrwxrwxrwx 	 0/0 	 ./usr/bin/unzip -> /etc/alternatives/unzip 
 -rwxr-xr-x 	 0/0 	 ./usr/bin/update-alternatives   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/users   
--rwxr-xr-x 	 0/0 	 ./usr/bin/watchgnupg   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/wc   
 lrwxrwxrwx 	 0/0 	 ./usr/bin/which -> /bin/which 
 -rwxr-xr-x 	 0/0 	 ./usr/bin/who   
@@ -707,6 +701,9 @@ drwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/
 -rwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/gpg-check-pattern   
 -rwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/gpg-preset-passphrase   
 -rwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/gpg-protect-tool   
+drwxr-xr-x 	 0/0 	 ./usr/lib/gnupg2/   
+lrwxrwxrwx 	 0/0 	 ./usr/lib/gnupg2/gpg-preset-passphrase -> ../gnupg/gpg-preset-passphrase 
+lrwxrwxrwx 	 0/0 	 ./usr/lib/gnupg2/gpg-protect-tool -> ../gnupg/gpg-protect-tool 
 drwxr-xr-x 	 0/0 	 ./usr/lib/locale/   
 -rw-r--r-- 	 0/0 	 ./usr/lib/locale/locale-archive   
 drwxr-xr-x 	 0/0 	 ./usr/lib/mime/   
@@ -722,9 +719,18 @@ drwxr-xr-x 	 0/0 	 ./usr/lib/python3/dist-packages/
 -rw-r--r-- 	 0/0 	 ./usr/lib/python3/dist-packages/debconf.py   
 drwxr-xr-x 	 0/0 	 ./usr/lib/systemd/   
 drwxr-xr-x 	 0/0 	 ./usr/lib/systemd/user/   
+-rw-r--r-- 	 0/0 	 ./usr/lib/systemd/user/gpg-agent-browser.socket   
+-rw-r--r-- 	 0/0 	 ./usr/lib/systemd/user/gpg-agent-extra.socket   
+-rw-r--r-- 	 0/0 	 ./usr/lib/systemd/user/gpg-agent-ssh.socket   
 -rw-r--r-- 	 0/0 	 ./usr/lib/systemd/user/gpg-agent.service   
-drwxr-xr-x 	 0/0 	 ./usr/lib/systemd/user/graphical-session-pre.target.wants/   
-lrwxrwxrwx 	 0/0 	 ./usr/lib/systemd/user/graphical-session-pre.target.wants/gpg-agent.service -> ../gpg-agent.service 
+-rw-r--r-- 	 0/0 	 ./usr/lib/systemd/user/gpg-agent.socket   
+drwxr-xr-x 	 0/0 	 ./usr/lib/systemd/user/sockets.target.wants/   
+lrwxrwxrwx 	 0/0 	 ./usr/lib/systemd/user/sockets.target.wants/gpg-agent-browser.socket -> ../gpg-agent-browser.socket 
+lrwxrwxrwx 	 0/0 	 ./usr/lib/systemd/user/sockets.target.wants/gpg-agent-extra.socket -> ../gpg-agent-extra.socket 
+lrwxrwxrwx 	 0/0 	 ./usr/lib/systemd/user/sockets.target.wants/gpg-agent-ssh.socket -> ../gpg-agent-ssh.socket 
+lrwxrwxrwx 	 0/0 	 ./usr/lib/systemd/user/sockets.target.wants/gpg-agent.socket -> ../gpg-agent.socket 
+drwxr-xr-x 	 0/0 	 ./usr/lib/systemd/user-environment-generators/   
+-rwxr-xr-x 	 0/0 	 ./usr/lib/systemd/user-environment-generators/90gpg-agent   
 drwxr-xr-x 	 0/0 	 ./usr/lib/tar/   
 drwxr-xr-x 	 0/0 	 ./usr/lib/tmpfiles.d/   
 drwxr-xr-x 	 0/0 	 ./usr/lib/x86_64-cros-linux-gnu/   
@@ -1461,10 +1467,8 @@ drwxr-xr-x 	 0/0 	 ./usr/local/share/man/
 drwxr-xr-x 	 0/0 	 ./usr/local/src/   
 drwxr-xr-x 	 0/0 	 ./usr/sbin/   
 -rwxr-xr-x 	 0/0 	 ./usr/sbin/add-shell   
--rwxr-xr-x 	 0/0 	 ./usr/sbin/addgnupghome   
 lrwxrwxrwx 	 0/0 	 ./usr/sbin/addgroup -> adduser 
 -rwxr-xr-x 	 0/0 	 ./usr/sbin/adduser   
--rwxr-xr-x 	 0/0 	 ./usr/sbin/applygnupgdefaults   
 -rwxr-xr-x 	 0/0 	 ./usr/sbin/chgpasswd   
 -rwxr-xr-x 	 0/0 	 ./usr/sbin/chpasswd   
 -rwxr-xr-x 	 0/0 	 ./usr/sbin/chroot   
@@ -1636,7 +1640,6 @@ drwxr-xr-x 	 0/0 	 ./usr/share/lintian/overrides/
 -rw-r--r-- 	 0/0 	 ./usr/share/lintian/overrides/ncurses-base   
 -rw-r--r-- 	 0/0 	 ./usr/share/lintian/overrides/passwd   
 -rw-r--r-- 	 0/0 	 ./usr/share/lintian/overrides/perl-base   
--rw-r--r-- 	 0/0 	 ./usr/share/lintian/overrides/readline-common   
 drwxr-xr-x 	 0/0 	 ./usr/share/locale/   
 lrwxrwxrwx 	 0/0 	 ./usr/share/locale/locale.alias -> /etc/locale.alias 
 drwxr-xr-x 	 0/0 	 ./usr/share/locales/   
@@ -1783,8 +1786,6 @@ drwxr-xr-x 	 0/0 	 ./usr/share/perl5/Debian/
 drwxr-xr-x 	 0/0 	 ./usr/share/perl5/Debian/DebConf/   
 drwxr-xr-x 	 0/0 	 ./usr/share/perl5/Debian/DebConf/Client/   
 -rw-r--r-- 	 0/0 	 ./usr/share/perl5/Debian/DebConf/Client/ConfModule.pm   
-drwxr-xr-x 	 0/0 	 ./usr/share/readline/   
--rw-r--r-- 	 0/0 	 ./usr/share/readline/inputrc   
 drwxr-xr-x 	 0/0 	 ./usr/share/runit/   
 -rw-r--r-- 	 0/0 	 ./usr/share/runit/inittab   
 drwxr-xr-x 	 0/0 	 ./usr/share/tabset/   
@@ -1866,6 +1867,8 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/
 drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/alternatives/   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/awk   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/builtins.7.gz   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/gnupg2   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/gpgv2   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/lzip   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/lzma   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/alternatives/mt   
@@ -1953,17 +1956,15 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/format   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gcc-7-base:amd64.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gcc-7-base:amd64.md5sums   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gnupg-agent.conffiles   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gnupg-agent.list   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gnupg-agent.md5sums   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gnupg.list   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gnupg.md5sums   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gnupg2.list   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gnupg2.md5sums   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gpg-agent.conffiles   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gpg-agent.list   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gpg-agent.md5sums   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gpg.list   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gpg.md5sums   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gpgconf.list   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gpgconf.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gpgv.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gpgv.md5sums   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gpgv2.list   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gpgv2.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/grep.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/grep.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gzip.list   
@@ -2105,11 +2106,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libpcre3:amd64.shlibs   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libpcre3:amd64.symbols.lz   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libpcre3:amd64.triggers   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libreadline6:amd64.list   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libreadline6:amd64.md5sums   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libreadline6:amd64.shlibs   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libreadline6:amd64.symbols.lz   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libreadline6:amd64.triggers   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libseccomp2:amd64.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libseccomp2:amd64.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libseccomp2:amd64.shlibs   
@@ -2201,10 +2197,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/psmisc.md5sums   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/psmisc.postinst   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/psmisc.postrm   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/readline-common.list   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/readline-common.md5sums   
--rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/readline-common.postinst   
--rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/readline-common.postrm   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/runit.conffiles   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/runit.list   
 -rw-rw-r-- 	 0/0 	 ./var/lib/dpkg/info/runit.md5sums   
