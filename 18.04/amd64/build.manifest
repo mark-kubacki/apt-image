@@ -2,9 +2,9 @@ adduser 	 3.116ubuntu1
 apt 	 1.5.1-7bn
 apt-transport-https 	 1.5.1-7bn
 base-files 	 10ubuntu1
-bash 	 4.4.18-1ubuntu1
+bash 	 4.4.19-1bn17
 bzip2 	 1.0.6-8.1
-ca-certificates 	 20180303
+ca-certificates 	 20180308
 coreutils 	 8.29-10bn
 curl 	 7.58.0-89dyn
 dash 	 0.5.8-2.10
@@ -62,7 +62,7 @@ mawk 	 1.3.3-17ubuntu2
 minizip 	 1.1-8
 ncurses-base 	 6.1-1ubuntu1
 passwd 	 1:4.5-1ubuntu1
-perl-base 	 5.26.1-5
+perl-base 	 5.26.1-13bn
 pinentry-curses 	 1.1.0-1
 psmisc 	 23.1-1
 runit 	 2.1.2-9.2ubuntu1
