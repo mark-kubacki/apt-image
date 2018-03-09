@@ -2,9 +2,9 @@ adduser 	 3.113+nmu3ubuntu5
 apt 	 1.5.1-7bn
 apt-transport-https 	 1.5.1-7bn
 base-files 	 9.6ubuntu102
-bash 	 4.4-19bn16
+bash 	 4.4.19-1bn17
 bzip2 	 1.0.6-8.1
-ca-certificates 	 20180303
+ca-certificates 	 20180308
 coreutils 	 8.29-10bn
 cpio 	 2.11+dfsg-6
 curl 	 7.58.0-89dyn
@@ -12,7 +12,7 @@ dash 	 0.5.8-2.3ubuntu1
 debconf 	 1.5.63
 debianutils 	 4.8.2
 diffutils 	 1:3.6-1
-dpkg 	 1.19.0.4ubuntu1
+dpkg 	 1.19.0.5ubuntu1
 findutils 	 4.6.0+git+20170729-2
 gcc-7-base 	 7.3.0-8bn
 gpg 	 2.2.5-16bn
@@ -67,7 +67,7 @@ minizip 	 1.1-8
 multiarch-support 	 2.27-43bn
 ncurses-base 	 6.0+20160625-1ubuntu1
 passwd 	 1:4.2-4bn
-perl-base 	 5.26.1-3bn
+perl-base 	 5.26.1-13bn
 pinentry-curses 	 1.0.0-2
 plzip 	 1.6-2
 psmisc 	 23.1-1
