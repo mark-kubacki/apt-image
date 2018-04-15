@@ -7,7 +7,7 @@ bzip2 	 1.0.6-8.1
 ca-certificates 	 20180308
 coreutils 	 8.29-10bn
 cpio 	 2.11+dfsg-6
-curl 	 7.58.0-89dyn
+curl 	 7.59.0-102dyn
 dash 	 0.5.8-2.3ubuntu1
 debconf 	 1.5.63
 debianutils 	 4.8.2
@@ -15,10 +15,10 @@ diffutils 	 1:3.6-1
 dpkg 	 1.19.0.5ubuntu1
 findutils 	 4.6.0+git+20170729-2
 gcc-7-base 	 7.3.0-8bn
-gpg 	 2.2.5-16bn
-gpg-agent 	 2.2.5-16bn
-gpgconf 	 2.2.5-16bn
-gpgv 	 2.2.5-16bn
+gpg 	 2.2.6-19bn
+gpg-agent 	 2.2.6-19bn
+gpgconf 	 2.2.6-19bn
+gpgv 	 2.2.6-19bn
 grep 	 3.1-2
 gzip 	 1.9-5bn
 hostname 	 3.18
@@ -37,10 +37,10 @@ libcap-ng0 	 0.7.7-3build1
 libcap2 	 1:2.25-1.1
 libcap2-bin 	 1:2.25-1.1
 libcurl3 	 7.99.9-1alias
-libcurl3-boringssl 	 7.58.0-89
+libcurl3-boringssl 	 7.59.0-102
 libgcc1 	 1:7.3.0-8bn
 libgcrypt20 	 1.8.2-14bn
-libgpg-error0 	 1.27-6bn
+libgpg-error0 	 1.29-9bn
 liblz1 	 1.9-2
 liblz4-1 	 0.0~r131-2ubuntu2
 liblzma5 	 5.2.2-1.3
@@ -72,7 +72,7 @@ pinentry-curses 	 1.0.0-2
 plzip 	 1.6-2
 psmisc 	 23.1-1
 runit 	 2.1.2-9ubuntu2
-sed 	 4.4-1
+sed 	 4.5-2
 sensible-utils 	 0.0.10ubuntu0.1
 signify-linux 	 1.106.1-1bn
 tar 	 1.29b-2

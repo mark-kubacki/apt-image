@@ -110,6 +110,7 @@ drwxr-xr-x 	 0/0 	 ./etc/apt/preferences.d/
 drwxr-xr-x 	 0/0 	 ./etc/apt/sources.list.d/   
 -rw-r--r-- 	 0/0 	 ./etc/apt/trusted.gpg   
 drwxr-xr-x 	 0/0 	 ./etc/apt/trusted.gpg.d/   
+-rw-r--r-- 	 0/0 	 ./etc/apt/trusted.gpg.d/blitznote.gpg   
 -rw-r--r-- 	 0/0 	 ./etc/apt/trusted.gpg.d/ubuntu-keyring-2012-archive.gpg   
 -rw-r--r-- 	 0/0 	 ./etc/apt/trusted.gpg.d/ubuntu-keyring-2012-cdimage.gpg   
 -rw-r--r-- 	 0/0 	 ./etc/bash.bashrc   
@@ -323,8 +324,8 @@ lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libdl.so.2 -> libdl-2.27.so
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcc_s.so.1   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20 -> libgcrypt.so.20.2.2 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20.2.2   
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0 -> libgpg-error.so.0.22.0 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0.22.0   
+lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0 -> libgpg-error.so.0.24.0 
+-rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0.24.0   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5 -> liblzma.so.5.2.2 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5.2.2   
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libm-2.27.so   
@@ -1516,6 +1517,7 @@ drwxr-xr-x 	 0/0 	 ./usr/share/common-licenses/
 -rw-r--r-- 	 0/0 	 ./usr/share/common-licenses/Apache-2.0.xz   
 -rw-r--r-- 	 0/0 	 ./usr/share/common-licenses/Artistic.xz   
 -rw-r--r-- 	 0/0 	 ./usr/share/common-licenses/BSD.xz   
+-rw-r--r-- 	 0/0 	 ./usr/share/common-licenses/CC0-1.0.xz   
 lrwxrwxrwx 	 0/0 	 ./usr/share/common-licenses/GFDL -> GFDL-1.3.lz 
 -rw-r--r-- 	 0/0 	 ./usr/share/common-licenses/GFDL-1.2.xz   
 -rw-r--r-- 	 0/0 	 ./usr/share/common-licenses/GFDL-1.3.xz   
