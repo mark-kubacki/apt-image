@@ -333,8 +333,8 @@ lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libdl.so.2 -> libdl-2.27.so
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcc_s.so.1   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20 -> libgcrypt.so.20.2.2 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20.2.2   
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0 -> libgpg-error.so.0.24.0 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0.24.0   
+lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0 -> libgpg-error.so.0.24.2 
+-rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0.24.2   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5 -> liblzma.so.5.2.2 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5.2.2   
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libm-2.27.so   

@@ -5,6 +5,7 @@ Ever wondered why Ubuntu for Docker comes with *systemd* and tools for filesyste
 Yeah, [me](https://twitter.com/murmosh) too.
 These are container images without that fuzz.
 
+* blitznote/debase:18.04 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:18.04.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 18.04 on MicroBadger.com")
 * blitznote/debase:17.10 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:17.10.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 17.10 on MicroBadger.com")
 * blitznote/debase:16.04 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:16.04.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 16.04 on MicroBadger.com")
 
@@ -23,6 +24,7 @@ rkt trust --prefix blitznote.com
 
 rkt image fetch blitznote.com/ubuntu:16.04
 rkt image fetch blitznote.com/ubuntu:17.10
+rkt image fetch blitznote.com/ubuntu:18.04
 ```
 
 Above images are 13 MiB when downloaded, and extracted about the same size as images for *Docker*.  
@@ -136,5 +138,5 @@ Caveats
   accompanying logline `trap invalid opcode` (run `dmesg` or check your syslog daemon for details).
 * CPUs preceding *AMD family `15h`* and *Intel's Ivy Bridge* will not work.  
   *Intel Edison* as well as *KNL* is supported.
-* You need Linux 4.4.0 or later, with **Seccomp** for sandboxing of processes.  
+* You need Linux 4.4.110 or later, with **Seccomp** for sandboxing of processes.  
   `zgrep SECCOMP /proc/config.gz`

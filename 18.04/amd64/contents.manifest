@@ -324,8 +324,8 @@ lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libdl.so.2 -> libdl-2.27.so
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcc_s.so.1   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20 -> libgcrypt.so.20.2.2 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20.2.2   
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0 -> libgpg-error.so.0.24.0 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0.24.0   
+lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0 -> libgpg-error.so.0.24.2 
+-rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0.24.2   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5 -> liblzma.so.5.2.2 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5.2.2   
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libm-2.27.so   
@@ -796,6 +796,8 @@ lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libstdc++.so.6 -> libstdc++.so.6.0
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libtic.so.5 -> libtic.so.5.9 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libtic.so.5.9   
+lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libzstd.so.1 -> libzstd.so.1.3.3 
+-rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libzstd.so.1.3.3   
 drwxr-xr-x 	 0/0 	 ./usr/lib/x86_64-linux-gnu/perl/   
 drwxr-xr-x 	 0/0 	 ./usr/lib/x86_64-linux-gnu/perl-base/   
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/perl-base/AutoLoader.pm   
@@ -2108,6 +2110,11 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libtinfo5:amd64.shlibs   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libtinfo5:amd64.symbols.xz   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libtinfo5:amd64.triggers   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libzstd1:amd64.list   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libzstd1:amd64.md5sums   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libzstd1:amd64.shlibs   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libzstd1:amd64.symbols.xz   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libzstd1:amd64.triggers   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/locales.conffiles   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/locales.config   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/locales.list   
