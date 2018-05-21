@@ -74,20 +74,6 @@ I've created a script for fetching keys from keyservers:
 | apt-key add
 ```
 
-### Troubleshooting
-
-These images come with latest versions of **libc** and **Perl**, no matter which
-Ubuntu version you have downloaded.
-Although this decision benefits security, you can run into packages which won't install due to dependencies.
-In almost all cases it's either related to *Perl* or broken in vanilla Ubuntu, too.
-
-To downgrade *Perl* to use packages from Ubuntu only:
-
-```bash
-. /etc/os-release
-apt-get -t ${UBUNTU_CODENAME} --allow-downgrades -y install perl-base
-```
-
 Regenerate the Images
 ---------------------
 
