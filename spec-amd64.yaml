@@ -1,0 +1,17 @@
+image: blitznote/debase:16.04
+manifests:
+  - image: blitznote/debootstrap-amd64:16.04
+    platform:
+      architecture: amd64
+      features:
+        - mmx
+        - sse
+        - sse2
+        - ssse3
+        - sse4
+        - cx16
+        - fxsr
+        - pclmul
+        - popcnt
+        - invpcid
+      os: linux

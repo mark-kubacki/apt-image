@@ -1,0 +1,53 @@
+services:
+- 'docker.io/docker:dind'
+
+stages:
+- deploy
+
+variables:
+  DOCKER_USER: "blitznote"
+  DOCKER_SLUG: "debootstrap-amd64"
+  GIT_DEPTH: "10"
+
+before_script:
+- mkdir -p ~/.docker
+- printf '{"auths":{"https://index.docker.io/v1/":{"auth":"%s"}}}\n' "${DOCKER_AUTH}" >~/.docker/config.json
+- if grep -q -F docker.io-docker /etc/hosts; then
+    export DOCKER_HOST="tcp://docker.io-docker:2375";
+  else
+    export DOCKER_HOST="tcp://docker:2375";
+  fi
+- docker info
+- docker login -u gitlab-ci-token -p "$CI_BUILD_TOKEN" "$CI_REGISTRY"
+
+deploy:
+  stage: deploy
+  except:
+  - '/^doc.*/'
+  tags:
+  - privileged
+  script:
+  - while read -r R; do
+      IFS=/ read -r _ NUM ARCH _ <<<"${R}";
+      cd "${R%/*}";
+      if [[ "${ARCH}" == "amd64" ]]; then
+        docker build --rm -t "${CI_REGISTRY_IMAGE}:${NUM}" .;
+        docker tag "${CI_REGISTRY_IMAGE}:${NUM}" "docker.io/${DOCKER_USER}/${DOCKER_SLUG}:${NUM}";
+        cp -a "${CI_PROJECT_DIR}"/{spec-amd64,debase-${NUM}}.yaml;
+      else
+        docker build --rm -t "${CI_REGISTRY_IMAGE}/${ARCH}:${NUM}" .;
+        docker tag "${CI_REGISTRY_IMAGE}/${ARCH}:${NUM}" "docker.io/${DOCKER_USER}/${DOCKER_SLUG}:${NUM}-${ARCH}";
+      fi;
+      cd "${CI_PROJECT_DIR}";
+      if [[ -s "spec-${ARCH}.yaml" ]]; then
+        <"spec-${ARCH}.yaml" sed -e "s@16.04@${NUM}@g" >"debase-${ARCH}-${NUM}.yaml";
+      fi;
+    done < <(find -name rootfs.tar)
+
+  - docker images
+  - docker push "${CI_REGISTRY_IMAGE}"
+  - docker push "docker.io/${DOCKER_USER}/${DOCKER_SLUG}"
+
+  - for SPEC in debase-*.yaml; do
+      ./manifest-tool-linux-amd64 push from-spec "${SPEC}";
+    done
