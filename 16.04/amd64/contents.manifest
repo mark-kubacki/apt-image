@@ -350,8 +350,6 @@ lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libncursesw.so.5 -> libncursesw.so.5.9
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libnsl.so.1 -> libnsl-2.27.so 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libnss_compat-2.27.so   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libnss_compat.so.2 -> libnss_compat-2.27.so 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libnss_db-2.27.so   
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libnss_db.so.2 -> libnss_db-2.27.so 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libnss_dns-2.27.so   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libnss_dns.so.2 -> libnss_dns-2.27.so 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libnss_files-2.27.so   
@@ -383,8 +381,8 @@ lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libtinfo.so.5 -> libtinfo.so.5.9
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libtinfo.so.5.9   
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libutil-2.27.so   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libutil.so.1 -> libutil-2.27.so 
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libz.so.1 -> libz.so.1.2.8 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libz.so.1.2.8   
+lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libz.so.1 -> libz.so.1.2.11 
+-rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libz.so.1.2.11   
 drwxr-xr-x 	 0/0 	 ./lib/x86_64-linux-gnu/security/   
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/security/pam_access.so   
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/security/pam_debug.so   
@@ -698,8 +696,7 @@ drwxr-xr-x 	 0/0 	 ./usr/lib/dpkg/methods/apt/
 -rwxr-xr-x 	 0/0 	 ./usr/lib/dpkg/methods/apt/update   
 drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/   
 drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/   
-drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/7/   
-lrwxrwxrwx 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/7.3.0 -> 7 
+drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/8/   
 drwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/   
 -rwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/gpg-check-pattern   
 -rwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/gpg-preset-passphrase   
@@ -816,8 +813,8 @@ lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libpcreposix.so.3 -> libpcreposix.
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libsemanage.so.1   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libsqlite3.so.0 -> libsqlite3.so.0.8.6 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6   
-lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libstdc++.so.6 -> libstdc++.so.6.0.24 
--rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.24   
+lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libstdc++.so.6 -> libstdc++.so.6.0.25 
+-rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libtic.so.5 -> libtic.so.5.9 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libtic.so.5.9   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libustr-1.0.so.1 -> libustr-1.0.so.1.0.4 
@@ -1572,20 +1569,20 @@ drwxr-xr-x 	 0/0 	 ./usr/share/dpkg/
 -rw-r--r-- 	 0/0 	 ./usr/share/dpkg/cputable   
 -rw-r--r-- 	 0/0 	 ./usr/share/dpkg/ostable   
 -rw-r--r-- 	 0/0 	 ./usr/share/dpkg/tupletable   
-drwxr-xr-x 	 0/0 	 ./usr/share/gcc-7/   
-drwxr-xr-x 	 0/0 	 ./usr/share/gcc-7/python/   
-drwxr-xr-x 	 0/0 	 ./usr/share/gcc-7/python/libstdcxx/   
--rw-r--r-- 	 0/0 	 ./usr/share/gcc-7/python/libstdcxx/__init__.py   
-drwxr-xr-x 	 0/0 	 ./usr/share/gcc-7/python/libstdcxx/v6/   
--rw-r--r-- 	 0/0 	 ./usr/share/gcc-7/python/libstdcxx/v6/__init__.py   
--rw-r--r-- 	 0/0 	 ./usr/share/gcc-7/python/libstdcxx/v6/printers.py   
--rw-r--r-- 	 0/0 	 ./usr/share/gcc-7/python/libstdcxx/v6/xmethods.py   
+drwxr-xr-x 	 0/0 	 ./usr/share/gcc-8/   
+drwxr-xr-x 	 0/0 	 ./usr/share/gcc-8/python/   
+drwxr-xr-x 	 0/0 	 ./usr/share/gcc-8/python/libstdcxx/   
+-rw-r--r-- 	 0/0 	 ./usr/share/gcc-8/python/libstdcxx/__init__.py   
+drwxr-xr-x 	 0/0 	 ./usr/share/gcc-8/python/libstdcxx/v6/   
+-rw-r--r-- 	 0/0 	 ./usr/share/gcc-8/python/libstdcxx/v6/__init__.py   
+-rw-r--r-- 	 0/0 	 ./usr/share/gcc-8/python/libstdcxx/v6/printers.py   
+-rw-r--r-- 	 0/0 	 ./usr/share/gcc-8/python/libstdcxx/v6/xmethods.py   
 drwxr-xr-x 	 0/0 	 ./usr/share/gdb/   
 drwxr-xr-x 	 0/0 	 ./usr/share/gdb/auto-load/   
 drwxr-xr-x 	 0/0 	 ./usr/share/gdb/auto-load/usr/   
 drwxr-xr-x 	 0/0 	 ./usr/share/gdb/auto-load/usr/lib/   
 drwxr-xr-x 	 0/0 	 ./usr/share/gdb/auto-load/usr/lib/x86_64-linux-gnu/   
--rw-r--r-- 	 0/0 	 ./usr/share/gdb/auto-load/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.24-gdb.py   
+-rw-r--r-- 	 0/0 	 ./usr/share/gdb/auto-load/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25-gdb.py   
 drwxr-xr-x 	 0/0 	 ./usr/share/gnupg/   
 -rw-r--r-- 	 0/0 	 ./usr/share/gnupg/distsigkey.gpg   
 drwxr-xr-x 	 0/0 	 ./usr/share/i18n/   
@@ -1957,8 +1954,8 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/findutils.postinst   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/findutils.preinst   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/format   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gcc-7-base:amd64.list   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gcc-7-base:amd64.md5sums   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gcc-8-base:amd64.list   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gcc-8-base:amd64.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gpg-agent.conffiles   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gpg-agent.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gpg-agent.md5sums   

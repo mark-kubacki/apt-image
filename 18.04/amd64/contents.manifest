@@ -339,8 +339,6 @@ lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libncursesw.so.5 -> libncursesw.so.5.9
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libnsl.so.1 -> libnsl-2.27.so 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libnss_compat-2.27.so   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libnss_compat.so.2 -> libnss_compat-2.27.so 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libnss_db-2.27.so   
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libnss_db.so.2 -> libnss_db-2.27.so 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libnss_dns-2.27.so   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libnss_dns.so.2 -> libnss_dns-2.27.so 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libnss_files-2.27.so   
@@ -680,10 +678,7 @@ drwxr-xr-x 	 0/0 	 ./usr/lib/dpkg/methods/apt/
 -rwxr-xr-x 	 0/0 	 ./usr/lib/dpkg/methods/apt/update   
 drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/   
 drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/   
-drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/7/   
-lrwxrwxrwx 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/7.3.0 -> 7 
 drwxr-xr-x 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/8/   
-lrwxrwxrwx 	 0/0 	 ./usr/lib/gcc/x86_64-linux-gnu/8.0.1 -> 8 
 drwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/   
 -rwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/gpg-check-pattern   
 -rwxr-xr-x 	 0/0 	 ./usr/lib/gnupg/gpg-preset-passphrase   
@@ -1931,8 +1926,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/findutils.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/findutils.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/format   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gcc-7-base:amd64.list   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gcc-7-base:amd64.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gcc-8-base:amd64.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gcc-8-base:amd64.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/gpg-agent.conffiles   
