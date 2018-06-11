@@ -266,6 +266,7 @@ drwxr-xr-x 	 0/0 	 ./lib/terminfo/r/
 -rw-r--r-- 	 0/0 	 ./lib/terminfo/r/rxvt-basic   
 lrwxrwxrwx 	 0/0 	 ./lib/terminfo/r/rxvt-m -> rxvt-basic 
 -rw-r--r-- 	 0/0 	 ./lib/terminfo/r/rxvt-unicode   
+-rw-r--r-- 	 0/0 	 ./lib/terminfo/r/rxvt-unicode-256color   
 drwxr-xr-x 	 0/0 	 ./lib/terminfo/s/   
 -rw-r--r-- 	 0/0 	 ./lib/terminfo/s/screen   
 -rw-r--r-- 	 0/0 	 ./lib/terminfo/s/screen-256color   
@@ -273,6 +274,7 @@ drwxr-xr-x 	 0/0 	 ./lib/terminfo/s/
 -rw-r--r-- 	 0/0 	 ./lib/terminfo/s/screen-bce   
 -rw-r--r-- 	 0/0 	 ./lib/terminfo/s/screen-s   
 -rw-r--r-- 	 0/0 	 ./lib/terminfo/s/screen-w   
+-rw-r--r-- 	 0/0 	 ./lib/terminfo/s/screen.xterm-256color   
 -rw-r--r-- 	 0/0 	 ./lib/terminfo/s/sun   
 drwxr-xr-x 	 0/0 	 ./lib/terminfo/v/   
 -rw-r--r-- 	 0/0 	 ./lib/terminfo/v/vt100   
