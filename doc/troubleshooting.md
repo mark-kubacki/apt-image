@@ -18,7 +18,9 @@ $ apt-get install linux-generic-hwe-16.04
 
 http://kernel.ubuntu.com/~kernel-ppa/mainline/?C=N;O=D
 
-    Please note that starting with v4.16 you will need to install *OpenSSL v1.1* as dependency on your host.
+    Please note that starting with v4.16 you will need to install shared libraries *OpenSSL v1.1* as dependency on your host.
+    Fortunately it's one *.deb file that won't affect any other package.  
+    https://packages.ubuntu.com/cosmic/amd64/libssl1.1/download
 
 ## Disable Sticky Packages
 
