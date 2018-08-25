@@ -2078,10 +2078,9 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libnpth0:amd64.triggers   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libonig2:amd64.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libonig2:amd64.md5sums   
--rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/libonig2:amd64.postinst   
--rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/libonig2:amd64.postrm   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libonig2:amd64.shlibs   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libonig2:amd64.symbols.lz   
+-rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libonig2:amd64.triggers   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libpam-modules-bin.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libpam-modules-bin.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libpam-modules:amd64.conffiles   
