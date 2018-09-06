@@ -191,6 +191,7 @@ drwxr-xr-x 	 0/0 	 ./etc/pam.d/
 -rw-r--r-- 	 0/0 	 ./etc/passwd-   
 -rw-r--r-- 	 0/0 	 ./etc/profile   
 drwxr-xr-x 	 0/0 	 ./etc/profile.d/   
+-rw-r--r-- 	 0/0 	 ./etc/profile.d/01-locale-fix.sh   
 -rwxr-xr-x 	 0/0 	 ./etc/rmt   
 drwxr-xr-x 	 0/0 	 ./etc/runit/   
 -rwxr-xr-x 	 0/0 	 ./etc/runit/1   
@@ -544,6 +545,7 @@ lrwxrwxrwx 	 0/0 	 ./usr/bin/gpgv2 -> /etc/alternatives/gpgv2
 -rwxr-xr-x 	 0/0 	 ./usr/bin/ldd   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/link   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/locale   
+-rwxr-xr-x 	 0/0 	 ./usr/bin/locale-check   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/localedef   
 -rwxr-xr-x 	 0/0 	 ./usr/bin/logname   
 lrwxrwxrwx 	 0/0 	 ./usr/bin/lzcat -> /etc/alternatives/lzcat 
