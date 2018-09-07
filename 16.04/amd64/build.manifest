@@ -7,7 +7,7 @@ bzip2 	 1.0.6-8
 ca-certificates 	 20180308
 coreutils 	 8.29-10bn
 cpio 	 2.11+dfsg-5ubuntu1
-curl 	 7.61.1-63dyn
+curl 	 7.61.1-65dyn
 dash 	 0.5.8-2.1ubuntu2
 debconf 	 1.5.63
 debianutils 	 4.7
@@ -36,7 +36,7 @@ libc6 	 2.27-46bn
 libcap2 	 1:2.25-1
 libcap2-bin 	 1:2.25-1
 libcurl3 	 7.99.9-1alias
-libcurl3-boringssl 	 7.61.1-63
+libcurl3-boringssl 	 7.61.1-65
 libgcc1 	 1:8.2.0-47bn
 libgcrypt20 	 1.8.3-19bn
 libgpg-error0 	 1.32-13bn
