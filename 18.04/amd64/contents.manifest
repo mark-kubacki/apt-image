@@ -116,6 +116,7 @@ drwxr-xr-x 	 0/0 	 ./etc/apt/trusted.gpg.d/
 -rw-r--r-- 	 0/0 	 ./etc/apt/trusted.gpg.d/docker.gpg   
 -rw-r--r-- 	 0/0 	 ./etc/apt/trusted.gpg.d/ubuntu-keyring-2012-archive.gpg   
 -rw-r--r-- 	 0/0 	 ./etc/apt/trusted.gpg.d/ubuntu-keyring-2012-cdimage.gpg   
+-rw-r--r-- 	 0/0 	 ./etc/apt/trusted.gpg.d/ubuntu-keyring-2018-archive.gpg   
 -rw-r--r-- 	 0/0 	 ./etc/bash.bashrc   
 -rw-r--r-- 	 0/0 	 ./etc/bindresvport.blacklist   
 drwxr-xr-x 	 0/0 	 ./etc/cron.daily/   
@@ -328,8 +329,8 @@ lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libdl.so.2 -> libdl-2.28.so
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcc_s.so.1   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20 -> libgcrypt.so.20.2.4 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20.2.4   
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0 -> libgpg-error.so.0.24.3 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0.24.3   
+lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0 -> libgpg-error.so.0.25.0 
+-rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0.25.0   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5 -> liblzma.so.5.2.2 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5.2.2   
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libm-2.28.so   
@@ -771,8 +772,8 @@ lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-pkg.so.5.0 -> libapt-pkg.so
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-pkg.so.5.0.2   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-private.so.0.0 -> libapt-private.so.0.0.0 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-private.so.0.0.0   
-lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libassuan.so.0 -> libassuan.so.0.8.1 
--rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libassuan.so.0.8.1   
+lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libassuan.so.0 -> libassuan.so.0.8.2 
+-rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libassuan.so.0.8.2   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl-boringssl.so.3 -> ../x86_64-cros-linux-gnu/libcurl-boringssl.so.3 
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl-boringssl.so.4 -> ../x86_64-cros-linux-gnu/libcurl-boringssl.so.4 
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl-boringssl.so.4.5.0 -> ../x86_64-cros-linux-gnu/libcurl-boringssl.so.4.5.0 
@@ -1870,8 +1871,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/adduser.postinst   
 -rwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/adduser.postrm   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/adduser.templates   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/apt-transport-https.list   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/apt-transport-https.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/apt.conffiles   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/apt.list   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/apt.md5sums   
