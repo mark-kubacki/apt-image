@@ -300,6 +300,12 @@ lrwxrwxrwx 	 0/0 	 ./lib/terminfo/x/xterm-debian -> xterm
 -rw-r--r-- 	 0/0 	 ./lib/terminfo/x/xterm-vt220   
 -rw-r--r-- 	 0/0 	 ./lib/terminfo/x/xterm-xfree86   
 drwxr-xr-x 	 0/0 	 ./lib/x86_64-linux-gnu/   
+drwxr-xr-x 	 0/0 	 ./lib/x86_64-linux-gnu/avx512_1/   
+lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/avx512_1/liblzma.so.5 -> liblzma.so.5.2.4 
+-rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/avx512_1/liblzma.so.5.2.4   
+drwxr-xr-x 	 0/0 	 ./lib/x86_64-linux-gnu/haswell/   
+lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/haswell/liblzma.so.5 -> liblzma.so.5.2.4 
+-rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/haswell/liblzma.so.5.2.4   
 -rwxr-xr-x 	 0/0 	 ./lib/x86_64-linux-gnu/ld-2.28.so   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 -> ld-2.28.so 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libBrokenLocale-2.28.so   
@@ -331,8 +337,8 @@ lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20 -> libgcrypt.so.20.2.4
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgcrypt.so.20.2.4   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0 -> libgpg-error.so.0.25.0 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libgpg-error.so.0.25.0   
-lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5 -> liblzma.so.5.2.2 
--rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5.2.2   
+lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5 -> liblzma.so.5.2.4 
+-rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/liblzma.so.5.2.4   
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libm-2.28.so   
 lrwxrwxrwx 	 0/0 	 ./lib/x86_64-linux-gnu/libm.so.6 -> libm-2.28.so 
 -rw-r--r-- 	 0/0 	 ./lib/x86_64-linux-gnu/libmemusage.so   
@@ -726,6 +732,9 @@ lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-cros-linux-gnu/libcurl-boringssl.so.4 -> lib
 drwxr-xr-x 	 0/0 	 ./usr/lib/x86_64-linux-gnu/   
 drwxr-xr-x 	 0/0 	 ./usr/lib/x86_64-linux-gnu/audit/   
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/audit/sotruss-lib.so   
+drwxr-xr-x 	 0/0 	 ./usr/lib/x86_64-linux-gnu/avx512_1/   
+lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/avx512_1/liblz.so.1 -> liblz.so.1.11 
+-rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/avx512_1/liblz.so.1.11   
 drwxr-xr-x 	 0/0 	 ./usr/lib/x86_64-linux-gnu/coreutils/   
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/coreutils/libstdbuf.so   
 drwxr-xr-x 	 0/0 	 ./usr/lib/x86_64-linux-gnu/gconv/   
@@ -768,6 +777,9 @@ drwxr-xr-x 	 0/0 	 ./usr/lib/x86_64-linux-gnu/gconv/
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/gconv/UTF-7.so   
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/gconv/gconv-modules   
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache   
+drwxr-xr-x 	 0/0 	 ./usr/lib/x86_64-linux-gnu/haswell/   
+lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/haswell/liblz.so.1 -> liblz.so.1.11 
+-rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/haswell/liblz.so.1.11   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-pkg.so.5.0 -> libapt-pkg.so.5.0.2 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-pkg.so.5.0.2   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libapt-private.so.0.0 -> libapt-private.so.0.0.0 
@@ -782,8 +794,8 @@ lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl.so.4 -> libcurl-boringssl.
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 -> libcurl-boringssl.so.4.5.0 
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libformw.so.5 -> libformw.so.5.9 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libformw.so.5.9   
-lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/liblz.so.1 -> liblz.so.1.10 
--rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/liblz.so.1.10   
+lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/liblz.so.1 -> liblz.so.1.11 
+-rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/liblz.so.1.11   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/liblz4.so.1 -> liblz4.so.1.7.1 
 -rw-r--r-- 	 0/0 	 ./usr/lib/x86_64-linux-gnu/liblz4.so.1.7.1   
 lrwxrwxrwx 	 0/0 	 ./usr/lib/x86_64-linux-gnu/libmenuw.so.5 -> libmenuw.so.5.9 
@@ -2031,7 +2043,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libgpg-error0:amd64.symbols.lz   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/libgpg-error0:amd64.triggers   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblz1:amd64.list   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblz1:amd64.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblz1:amd64.shlibs   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblz1:amd64.triggers   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblz4-1:amd64.list   
@@ -2040,7 +2051,6 @@ drwxr-xr-x 	 0/0 	 ./var/lib/dpkg/info/
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblz4-1:amd64.symbols.lz   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblz4-1:amd64.triggers   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblzma5:amd64.list   
--rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblzma5:amd64.md5sums   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblzma5:amd64.shlibs   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblzma5:amd64.symbols.lz   
 -rw-r--r-- 	 0/0 	 ./var/lib/dpkg/info/liblzma5:amd64.triggers   
