@@ -124,5 +124,5 @@ Caveats
   accompanying logline `trap invalid opcode` (run `dmesg` or check your syslog daemon for details).
 * CPUs preceding *AMD family `15h`* and *Intel's Ivy Bridge* will not work.  
   *Intel Edison* as well as *KNL* is supported.
-* You need Linux 4.4.110 or later, with **Seccomp** for sandboxing of processes.  
+* You need Linux 4.13.0 or later, with **Seccomp** for sandboxing of processes.  
   `zgrep SECCOMP /proc/config.gz`
