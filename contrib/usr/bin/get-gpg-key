@@ -1,9 +1,18 @@
 #!/bin/bash
 #
-# author:   W. Mark Kubacki <wmark@hurrikane.de>
-# revision: 2017-04-02 #2
+# author:   Mark Kubacki <wmark@hurrikane.de>
+# revision: 2019-11-17 #3
 
 set -euo pipefail
+
+: ${cacert:="/etc/ssl/certs/sks-keyservers.netCA.pem"}
+: ${keyserver:="hkps.pool.sks-keyservers.net"}
+: ${pool="sks"}
+if [[ "${pool}" == "ubuntu" || ! -s "${cacert}" ]]; then
+  # Someone might be using this on their Ubuntu installation w/o the SKS CA file.
+  cacert="/etc/ssl/certs/ca-certificates.crt"
+  keyserver="keyserver.ubuntu.com"
+fi
 
 params=()
 params+=("--fail" "--silent" "--show-error")
@@ -16,14 +25,19 @@ for KEYID; do
   fi
   keyquery+=("--header" "Accept: text/plain;q=0.9,text/html;q=0.8")
   keyquery+=("--location")
-  keyquery+=("--cacert" "/etc/ssl/certs/sks-keyservers.netCA.pem")
-  keyquery+=("https://hkps.pool.sks-keyservers.net/pks/lookup?op=get&exact=on&fingerprint=on&search=${KEYID}")
+  if [[ -s "${cacert}" ]]; then
+    keyquery+=("--cacert" "${cacert}")
+  fi
+  if [[ "${KEYID}" != "0x"* ]]; then
+    KEYID="0x${KEYID}"
+  fi
+  keyquery+=("https://${keyserver}/pks/lookup?op=get&exact=on&fingerprint=on&search=${KEYID}")
 done
 
 if (( ${#keyquery[@]} > 0 )); then
-  # Allow for a second attempt, in case we got an server with an outdated OpenSSL version.
   if ! curl "${params[@]}" "${keyquery[@]}" \
        | sed -n '/^-----BEGIN/,/^-----END/p'; then
+    # Try again.
     sleep 1
     curl "${params[@]}" "${keyquery[@]}" \
     | sed -n '/^-----BEGIN/,/^-----END/p'
