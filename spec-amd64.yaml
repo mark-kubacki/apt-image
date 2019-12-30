@@ -1,4 +1,4 @@
-image: blitznote/debase:16.04
+image: blitznote/apt-image:16.04
 manifests:
   - image: blitznote/debootstrap-amd64:16.04
     platform:

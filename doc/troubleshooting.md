@@ -25,6 +25,8 @@ http://kernel.ubuntu.com/~kernel-ppa/mainline/?C=N;O=D
 ## Disable Sticky Packages
 
 Packages shouldn't be upgraded or modified between images.
+That's an best-practice with any layered container images.
+
 If an upgrade is necessary, the image tree (or lineage, in case of Docker) should be regenerated.
 
 To assist you with this best-practice for images, installed packages are 'sticky':
@@ -73,5 +75,3 @@ To downgrade *Perl* to use packages from Ubuntu only:
 . /etc/os-release
 apt-get -t ${UBUNTU_CODENAME} --allow-downgrades -y install perl-base
 ```
-
-If you are heavily invested in *Perl*, prefer `debase/bionic:18.04` (not `16.04`).

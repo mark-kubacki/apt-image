@@ -5,30 +5,7 @@ Ever wondered why Ubuntu for Docker comes with *systemd* and tools for filesyste
 Yeah, [me](https://twitter.com/murmosh) too.
 These are container images without that fuzz.
 
-* blitznote/debase:18.04 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:18.04.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 18.04 on MicroBadger.com")
-* blitznote/debase:17.10 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:17.10.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 17.10 on MicroBadger.com")
-* blitznote/debase:16.04 [![](https://images.microbadger.com/badges/image/blitznote/debootstrap-amd64:16.04.svg)](http://microbadger.com/images/blitznote/debootstrap-amd64 "Ubuntu 16.04 on MicroBadger.com")
-
-If in doubt use `16.04`.
-
-![size comparison: Ubuntu for Docker 120MB, ubuntu-debootstrap 87MB, blitznote/debase 39MB](https://rawgit.com/Blitznote/docker-ubuntu-debootstrap/master/ubuntu-for-Docker-sizes.svg)
-
-[![Docker image](https://img.shields.io/badge/Docker-blitznote%2Fdebootstrap-blue.svg)](https://hub.docker.com/r/blitznote/debootstrap-amd64/) ← https://github.com/Blitznote/debase
-
-## ACI and rkt
-
-This baseimages are available as ACI for **rkt**:
-
-```bash
-rkt trust --prefix blitznote.com
-
-rkt image fetch blitznote.com/ubuntu:16.04
-rkt image fetch blitznote.com/ubuntu:17.10
-rkt image fetch blitznote.com/ubuntu:18.04
-```
-
-Above images are 13 MiB when downloaded, and extracted about the same size as images for *Docker*.  
-Support for **dgr's**/**conti's** scripting is provided.
+![size comparison: Ubuntu for Docker 80 MiB, Ubuntu newgen 60 MiB, yet this one is 40 MiB](https://raw.github.com/Blitznote/apt-image/master/ubuntu-for-Docker-sizes.svg?sanitize=true "container image size comparison chart")
 
 Features
 --------
@@ -53,7 +30,7 @@ HTTPS support is already included in *apt*!
 
 Find examples here:
 
-* [Mark's Docker images](https://hub.docker.com/u/wmark/) – [Github](https://github.com/search?q=user%3Awmark+docker-)
+* [Github](https://github.com/search?q=user%3Awmark+docker-)
 
 ### Recommendations
 
@@ -103,7 +80,7 @@ Run something that does not return first. Then, utilize `script` with `docker ex
 
 ```bash
 # on the host:
-docker run -d --name "myenv" blitznote/debase:16.04 /bin/bash
+docker run -d --name "myenv" blitznote/apt-image:16.04 /bin/bash
 
 # Now use this "permanent environment" like this:
 docker exec -ti myenv script -q -c "/bin/bash" /dev/null
